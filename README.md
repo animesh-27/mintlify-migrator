@@ -72,3 +72,48 @@ This tool delivers a Docusaurus customer who has:
 - ~85% readiness for go-live
 
 The remaining 15% is component cleanup and API reference handling. This makes the migration process repeatable, scriptable, and QA-driven; exactly what high-leverage post-sales tooling should optimize for.
+
+## How to Run
+
+1. Clone the repository
+
+git clone https://github.com/animesh-27/mintlify-migrator.git
+cd mintlify-migrator
+
+2. Install dependencies
+
+npm install
+
+3. Prepare your Docusaurus project
+
+Place your Docusaurus repository so that it contains a docs and static directory.
+
+The tool automatically detects the following paths:
+	•	./docs
+	•	./input-docusaurus/docs
+
+4. Run the migrator
+
+node index.js
+
+This generates a mintlify-output/ directory containing:
+	•	Converted MDX pages
+	•	Generated docs.json configuration
+	•	Copied static assets (images, logos, etc.)
+
+5. Preview in Mintlify
+
+cd mintlify-output
+mint dev
+
+This launches a local Mintlify preview of the migrated documentation.
+
+You can paste that whole section directly.
+
+Then run:
+
+git add .
+git commit -m “Add run instructions”
+git push
+
+
