@@ -80,9 +80,10 @@ The remaining 15% mainly involves fixing unsupported components and handling API
 ## How to Run ##
 
 1. Clone the repository
-
+```bash
 git clone https://github.com/animesh-27/mintlify-migrator.git
 cd mintlify-migrator
+```
 
 2. Install dependencies
 
