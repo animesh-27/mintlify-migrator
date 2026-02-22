@@ -6,7 +6,7 @@ This project is all about an automated CLI migration tool that takes a raw docum
 
 I stepped into the shoes of someone handling the post-sales motion for Mintlify; Getting a customer from their legacy docs to a “Wow” moment on Mintlify is the real _(big)_ task.
 
-I chose Docusaurus because I’m pretty sure it represents a massive slice of Mintlify’s market.
+I chose Docusaurus because it represents a massive slice of Mintlify’s market.
 
 I believe companies outgrow Docusaurus because of high maintenance overhead but migrating away is kinda scary because Docusaurus uses a loosely-parsed flavor of MDX that doesn't easily copy-paste to other platforms.
 
@@ -55,23 +55,28 @@ To make this useful for a Solutions Engineering workflow, the tool needed to be 
 
 At scale, manual QA becomes the bottleneck. To operationalize this tool for a high-volume team, I would implement:
 
-Automated QA Reports and Component Compatibility Map, i.e, a growing library of Docusaurus-to-Mintlify component translations (e.g., automatically mapping &lt;Admonition type="danger"&gt; to &lt;Warning&gt;).
+1. Automated QA Reports -> which lists the pages that fail MDX Parsing, broken links, missing images and unsupported components.
+2. Component Compatibility Map-> a growing library of Docusaurus-to-Mintlify component translations
+3. Also allow the SE to override brand colors, logos, and primary CTAs directly in the terminal before the build starts.
 
-Also allow the SE to override brand colors, logos, and primary CTAs directly in the terminal before the build starts.
+## If I had more time ##
+1. I'd use Sidebar.js as a source of truth instead of inferring from folders and _category_ metadata alone.
+2. I'd implement a layer which could flag an unsupported Docusaurus import
 
 ## **_Final Reflection: Depth Over Breadth_**
 
 I intentionally chose Option A (Deep Docusaurus Migration) over a general-purpose tool. By focusing on one platform, I confronted real-world complexity, MDX compatibility, deep nesting, and component drift, rather than building a shallow tool that only works on "Hello World" examples.
 
-This tool delivers a Docusaurus customer who has:
+This tool gets a Docusaurus customer most of the way to a working Mintlify site, even though migrations are messy and not always straightforward.
 
-- Correct navigation structure
-- Converted content
-- Working preview
-- Branded configuration
-- ~85% readiness for go-live
+Specifically, it provides:
+	•	Correct navigation structure
+	•	Converted content with cleaned-up frontmatter
+	•	A working preview
+	•	Basic branding (logo and primary color)
+	•	Around 85% readiness for go-live
 
-The remaining 15% is component cleanup and API reference handling. This makes the migration process repeatable, scriptable, and QA-driven; exactly what high-leverage post-sales tooling should optimize for.
+The remaining 15% mainly involves fixing unsupported components and handling API reference pages. Instead of rebuilding everything manually, the team can focus on targeted QA and cleanup. The goal isn’t to remove all migration complexity — it’s to reduce it to a manageable, repeatable process.
 
 ## How to Run
 
