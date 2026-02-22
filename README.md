@@ -1,4 +1,4 @@
-### **_Docusaurus to Mintlify: Migration Tool_**
+### **_Docusaurus to Mintlify: Migration Tool_** ###
 
 This project is all about an automated CLI migration tool that takes a raw documentation repository and outputs an _(almost-ready)_ Mintlify project.
 
@@ -23,8 +23,7 @@ Also, since the goal was to get a customer 85% to go-live with correct structure
 
 I chose Dyte’s Documentation built using Docusaurus: https://github.com/dyte-io/docs
 
-**_  
-Why?_**  
+**_Why?_**  
 Dyte represents a true B2B challenge: they have complex, deeply nested hierarchies, multiple SDKs (Android, iOS, Flutter, React), UI kits and API guides. If a script can successfully parse and reorganize Dyte's documentation without manual intervention, it can handle almost any standard B2B SaaS customer.
 
 **_The Process: How It Was Built:_**
@@ -59,7 +58,7 @@ At scale, manual QA becomes the bottleneck. To operationalize this tool for a hi
 2. Component Compatibility Map-> a growing library of Docusaurus-to-Mintlify component translations
 3. Also allow the SE to override brand colors, logos, and primary CTAs directly in the terminal before the build starts.
 
-## If I had more time ##
+**_If I had more time_**
 1. I'd use Sidebar.js as a source of truth instead of inferring from folders and _category_ metadata alone.
 2. I'd implement a layer which could flag an unsupported Docusaurus import
 
@@ -78,7 +77,7 @@ Specifically, it provides:
 
 The remaining 15% mainly involves fixing unsupported components and handling API reference pages. Instead of rebuilding everything manually, the team can focus on targeted QA and cleanup. The goal isn’t to remove all migration complexity — it’s to reduce it to a manageable, repeatable process.
 
-## How to Run
+## How to Run ##
 
 1. Clone the repository
 
