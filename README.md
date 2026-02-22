@@ -87,7 +87,9 @@ cd mintlify-migrator
 
 2. Install dependencies
 
+```bash
 npm install
+```
 
 3. Prepare your Docusaurus project
 
@@ -99,7 +101,9 @@ The tool automatically detects the following paths:
 
 4. Run the migrator
 
+```bash
 node index.js
+```
 
 This generates a mintlify-output/ directory containing:
 	•	Converted MDX pages
@@ -108,8 +112,10 @@ This generates a mintlify-output/ directory containing:
 
 5. Preview in Mintlify
 
+```bash
 cd mintlify-output
 mint dev
+```
 
 This launches a local Mintlify preview of the migrated documentation.
 
@@ -117,8 +123,9 @@ You can paste that whole section directly.
 
 Then run:
 
+```bash
 git add .
 git commit -m “Add run instructions”
 git push
-
+```
 
