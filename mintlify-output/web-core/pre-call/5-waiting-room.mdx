@@ -1,0 +1,185 @@
+---
+title: "Waiting Room"
+---
+
+After you call `.join()` on meeting, you either get a `roomJoined` event if you are allowed to join or a `waitlisted` event.
+
+Use the `self.roomState` to track the user's state in the meeting.
+
+```mermaid
+stateDiagram-v2
+    init --> joined
+    init --> waitlisted
+    waitlisted --> joined
+    waitlisted --> rejected
+```
+
+<br />
+
+This diagram only represents the waiting room related states, the `roomState` property also transitions through other states
+
+Each of these state changes generate their own events.
+
+- **joined**
+
+
+
+<Tabs>
+
+
+  
+
+<Tab title="Javascript">
+
+
+
+```ts
+meeting.self.on('roomJoined', () => {
+  // local user is in the meeting
+});
+```
+
+
+
+</Tab>
+
+
+
+
+<Tab title="React">
+
+
+
+```ts
+const roomState = useDyteSelector((m) => m.self.roomState);
+const joined = roomState === 'joined';
+```
+
+Alternatively
+
+```ts
+meeting.self.on('roomJoined', () => {
+  // local user is in the meeting
+});
+```
+
+  
+
+</Tab>
+
+
+
+
+</Tabs>
+
+
+
+- **waitlisted**
+
+
+
+<Tabs>
+
+
+  
+
+<Tab title="Javascript">
+
+
+
+```ts
+meeting.self.on('waitlisted', () => {
+  // local user is waitlisted
+});
+```
+
+  
+
+</Tab>
+
+
+  
+
+<Tab title="React">
+
+
+
+```ts
+const roomState = useDyteSelector((m) => m.self.roomState);
+const isWaitlisted = roomState === 'waitlisted';
+```
+
+Alternatively
+
+```ts
+meeting.self.on('waitlisted', () => {
+  // local user is waitlisted
+});
+```
+
+  
+
+</Tab>
+
+
+
+
+</Tabs>
+
+
+
+- **rejected**
+
+
+
+<Tabs>
+
+
+  
+
+<Tab title="Javascript">
+
+
+
+```ts
+meeting.self.on('roomLeft', ({ state }) => {
+  // state = rejected when host rejects the entry
+});
+```
+
+  
+
+</Tab>
+
+
+  
+
+<Tab title="React">
+
+
+  
+```ts
+const roomState = useDyteSelector((m) => m.self.roomState);
+const rejected = roomState === 'rejected';
+```
+
+Alternatively
+
+```ts
+meeting.self.on('roomLeft', ({ state }) => {
+  // state = rejected when host rejects the entry
+});
+```
+
+
+
+</Tab>
+
+
+
+
+</Tabs>
+
+
+
+Host can use [these methods to accept/reject participants](/web-core/participants#waiting-room-methods)

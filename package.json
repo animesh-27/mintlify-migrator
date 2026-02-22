@@ -1,0 +1,17 @@
+{
+  "name": "mintlify-migrator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "fs-extra": "^11.3.3",
+    "inquirer": "^13.2.5"
+  }
+}

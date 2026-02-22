@@ -1,0 +1,804 @@
+---
+title: "Participant Events"
+---
+
+## All Participants Events
+
+You can subscribe to events for all participants by implementing
+`DyteParticipantsEventListener` callback and then passing that object to
+`meeting.addParticipantsEventListener(dyteParticipantEventsListener)` method.
+
+Here are the supported methods:
+
+### Participant joined
+
+Triggers an event when any participant joins the meeting.
+
+
+
+<Tabs>
+
+
+  
+
+<Tab title="Kotlin">
+
+
+
+```kotlin
+    private val participantsEventListener = object : DyteParticipantsEventListener {
+        override fun onParticipantJoin(participant: DyteRemoteParticipant) {
+        }
+    }
+```
+
+  
+
+</Tab>
+
+
+
+  
+
+<Tab title="Java">
+
+
+
+```java
+    DyteParticipantsEventListener listener = new DyteParticipantsEventListener() {
+        @Override
+        public void onParticipantJoin(DyteRemoteParticipant participant) {
+        }
+    };
+```
+
+  
+
+</Tab>
+
+
+
+
+</Tabs>
+
+
+
+### Participant left
+
+Triggers an event when any participant leaves the meeting.
+
+
+
+<Tabs>
+
+
+  
+
+<Tab title="Kotlin">
+
+
+
+```kotlin
+    private val participantsEventListener = object : DyteParticipantsEventListener {
+        override fun onParticipantLeave(participant: DyteRemoteParticipant) {
+        }
+    }
+```
+
+  
+
+</Tab>
+
+
+
+  
+
+<Tab title="Java">
+
+
+
+```java
+    DyteParticipantsEventListener listener = new DyteParticipantsEventListener() {
+        @Override
+        public void onParticipantLeave(DyteRemoteParticipant participant) {
+        }
+    };
+```
+
+  
+
+</Tab>
+
+
+
+
+</Tabs>
+
+
+
+### Participants update
+
+Triggers an event whenever there is any change in the `meeting.participants` object. This includes any updates to participant lists or changes in individual participant within those lists.
+
+
+
+<Tabs>
+
+
+  
+
+<Tab title="Kotlin">
+
+
+
+```kotlin
+    private val participantEventsListener = object : DyteParticipantsEventListener {
+        override fun onUpdate(participants: DyteParticipants) {
+            // your code here to handle participant update
+        }
+    }
+```
+
+  
+
+</Tab>
+
+
+
+  
+
+<Tab title="Java">
+
+
+
+```java
+    DyteParticipantsEventListener listener = new DyteParticipantsEventListener() {
+        @Override
+        public void onUpdate(DyteParticipants participants) {
+            // your code here to handle participant update
+        }
+    };
+```
+
+  
+
+</Tab>
+
+
+
+
+</Tabs>
+
+
+
+### Video update
+
+Triggers an event when any participant starts / stops video.
+
+
+
+<Tabs>
+
+
+  
+
+<Tab title="Kotlin">
+
+
+
+```kotlin
+    private val participantEventsListener = object : DyteParticipantsEventListener {
+        override fun onVideoUpdate(participant: DyteRemoteParticipant, isEnabled: Boolean) {
+            // your code here to handle participant video toggle update
+        }
+    }
+```
+
+  
+
+</Tab>
+
+
+
+  
+
+<Tab title="Java">
+
+
+
+```java
+    DyteParticipantsEventListener listener = new DyteParticipantsEventListener() {
+        @Override
+        public void onVideoUpdate(DyteRemoteParticipant participant, boolean isEnabled) {
+            // your code here to handle participant video toggle update
+        }
+    };
+```
+
+  
+
+</Tab>
+
+
+
+
+</Tabs>
+
+
+
+### Audio update
+
+Triggers an event when any participant starts / stops audio.
+
+
+
+<Tabs>
+
+
+  
+
+<Tab title="Kotlin">
+
+
+
+```kotlin
+    private val participantEventsListener = object : DyteParticipantsEventListener {
+        override fun onAudioUpdate(participant: DyteRemoteParticipant, isEnabled: Boolean) {
+            // your code here to handle participant audio toggle update
+        }
+    }
+```
+
+  
+
+</Tab>
+
+
+
+  
+
+<Tab title="Java">
+
+
+
+```java
+    DyteParticipantsEventListener listener = new DyteParticipantsEventListener() {
+        @Override
+        public void onAudioUpdate(@NonNull DyteRemoteParticipant participant, boolean isEnabled) {
+            // your code here to handle participant audio toggle update
+        }
+    };
+```
+
+  
+
+</Tab>
+
+
+
+
+</Tabs>
+
+
+
+### Screenshare updates
+
+Triggers an event when there is any change in screenshares in a meeting.
+
+
+
+<Tabs>
+
+
+  
+
+<Tab title="Kotlin">
+
+
+
+```kotlin
+    private val participantEventsListener = object : DyteParticipantsEventListener {
+        override fun onScreenShareUpdate(participant: DyteRemoteParticipant, isEnabled: Boolean) {
+            // your code here to handle screenshares from meeting
+            // you can use `meeting.participants.screenshares` to get latest screenshare participants
+        }
+    }
+```
+
+  
+
+</Tab>
+
+
+
+  
+
+<Tab title="Java">
+
+
+
+```java
+    DyteParticipantsEventListener listener = new DyteParticipantsEventListener() {
+        @Override
+        public void onScreenShareUpdate(@NonNull DyteRemoteParticipant participant, boolean isEnabled) {
+            // your code here to handle screenshares from meeting
+            // you can use `meeting.participants.screenshares` to get latest screenshare participants
+        }
+    };
+```
+
+  
+
+</Tab>
+
+
+
+
+</Tabs>
+
+
+
+### Active speaker
+
+Triggers an event when there is any change in active speaker in the meeting.
+
+
+
+<Tabs>
+
+
+  
+
+<Tab title="Kotlin">
+
+
+
+```kotlin
+    private val participantEventsListener = object : DyteParticipantsEventListener {
+        override fun onActiveSpeakerChanged(participant: DyteRemoteParticipant?) {
+            // If participant is null, there is no active speaker
+        }
+    }
+```
+
+  
+
+</Tab>
+
+
+
+  
+
+<Tab title="Java">
+
+
+
+```java
+    DyteParticipantsEventListener listener = new DyteParticipantsEventListener() {
+        @Override
+        public void onActiveSpeakerChanged(@Nullable DyteRemoteParticipant participant) {
+            // If participant is null, there is no active speaker
+        }
+    };
+```
+
+  
+
+</Tab>
+
+
+
+
+</Tabs>
+
+
+
+### Pinned participant
+
+Triggers an event when there is any change in pinned participant in the meeting.
+
+
+
+<Tabs>
+
+
+  
+
+<Tab title="Kotlin">
+
+
+
+```kotlin
+    private val participantEventsListener = object : DyteParticipantsEventListener {
+        override fun onParticipantPinned(participant: DyteRemoteParticipant) {
+        }
+
+        override fun onParticipantUnpinned(participant: DyteRemoteParticipant) {
+        }
+    }
+```
+
+  
+
+</Tab>
+
+
+
+  
+
+<Tab title="Java">
+
+
+
+```kotlin
+    DyteParticipantsEventListener listener = new DyteParticipantsEventListener() {
+        @Override
+        public void onParticipantPinned(DyteRemoteParticipant participant) {
+        }
+
+        @Override
+        public void onParticipantUnpinned(DyteRemoteParticipant participant) {
+        }
+    };
+```
+
+  
+
+</Tab>
+
+
+
+
+</Tabs>
+
+
+
+### Active participants list change
+
+Triggers an event when there is any change in active participants list in the meeting.
+
+
+
+<Tabs>
+
+
+  
+
+<Tab title="Kotlin">
+
+
+
+```kotlin
+    private val participantEventsListener = object : DyteParticipantsEventListener {
+        override fun onActiveParticipantsChanged(active: List<DyteRemoteParticipant>) {
+        }
+    }
+```
+
+  
+
+</Tab>
+
+
+
+  
+
+<Tab title="Java">
+
+
+
+```kotlin
+    DyteParticipantsEventListener listener = new DyteParticipantsEventListener() {
+        @Override
+        public void onActiveParticipantsChanged(List<DyteRemoteParticipant> participants) {
+        }
+    };
+```
+
+  
+
+</Tab>
+
+
+
+
+</Tabs>
+
+
+
+## Single Participant Events
+
+You can also subscribe to events for a single participant by implementing `DyteParticipantUpdateListener` callback and then passing that object to `participant.addParticipantUpdateListener(dyteParticipantUpdateListener)` method.
+
+Here are the supported methods:
+
+### Participant update
+
+Triggers an event whenever there is any change in participant.
+
+
+
+<Tabs>
+
+
+  
+
+<Tab title="Kotlin">
+
+
+
+```kotlin
+    private val participantUpdateListener = object : DyteParticipantUpdateListener {
+        override fun onUpdate(participant: DyteRemoteParticipant) {
+            // your code here to handle participant update
+        }
+    }
+```
+
+  
+
+</Tab>
+
+
+
+  
+
+<Tab title="Java">
+
+
+
+```java
+    DyteParticipantUpdateListener participantUpdateListener = new DyteParticipantUpdateListener() {
+        @Override
+        public void onUpdate(DyteRemoteParticipant participant) {
+            // your code here to handle participant update
+        }
+    }
+```
+
+  
+
+</Tab>
+
+
+
+
+</Tabs>
+
+
+
+### Video update
+
+Triggers an event when the participant starts / stops video.
+
+
+
+<Tabs>
+
+
+  
+
+<Tab title="Kotlin">
+
+
+
+```kotlin
+    private val participantUpdateListener = object : DyteParticipantUpdateListener {
+        override fun onVideoUpdate(participant: DyteRemoteParticipant, isEnabled: Boolean) {
+        }
+    }
+```
+
+  
+
+</Tab>
+
+
+
+  
+
+<Tab title="Java">
+
+
+
+```java
+    DyteParticipantUpdateListener participantUpdateListener = new DyteParticipantUpdateListener() {
+        @Override
+        public void onVideoUpdate(DyteRemoteParticipant participant, boolean isEnabled) {
+        }
+    }
+```
+
+  
+
+</Tab>
+
+
+
+
+</Tabs>
+
+
+
+### Audio update
+
+Triggers an event when the participant starts / stops audio.
+
+
+
+<Tabs>
+
+
+  
+
+<Tab title="Kotlin">
+
+
+
+```kotlin
+    private val participantUpdateListener = object : DyteParticipantUpdateListener {
+        override fun onAudioUpdate(participant: DyteRemoteParticipant, isEnabled: Boolean) {
+            // your code here to handle participant audio toggle update
+        }
+    }
+```
+
+  
+
+</Tab>
+
+
+
+  
+
+<Tab title="Java">
+
+
+
+```java
+    DyteParticipantUpdateListener participantUpdateListener = new DyteParticipantUpdateListener() {
+        @Override
+        public void onAudioUpdate(DyteRemoteParticipant participant, boolean isEnabled) {
+            // your code here to handle participant audio toggle update
+        }
+    }
+```
+
+  
+
+</Tab>
+
+
+
+
+</Tabs>
+
+
+
+### Pinned & Unpinned participant
+
+Triggers an event when the participant is pinned / unpinned.
+
+
+
+<Tabs>
+
+
+  
+
+<Tab title="Kotlin">
+
+
+
+```kotlin
+    private val participantUpdateListener = object : DyteParticipantUpdateListener {
+        override fun onPinned(participant: DyteRemoteParticipant) {
+            // your code here to show pinned participant
+        }
+
+        override fun onUnpinned(participant: DyteRemoteParticipant) {
+            // your code here to remove pinned participant
+        }
+    }
+```
+
+  
+
+</Tab>
+
+
+
+  
+
+<Tab title="Java">
+
+
+
+```java
+    DyteParticipantUpdateListener participantUpdateListener = new DyteParticipantUpdateListener() {
+        @Override
+        public void onPinned(DyteRemoteParticipant participant) {
+            // your code here to show pinned participant
+        }
+
+        @Override
+        public void onUnpinned(DyteRemoteParticipant participant) {
+            // your code here to remove pinned participant
+        }
+    }
+```
+
+  
+
+</Tab>
+
+
+
+
+</Tabs>
+
+
+
+### Screen share started & ended
+
+Triggers an event when the participant starts / stops screen sharing.
+
+
+
+<Tabs>
+
+
+  
+
+<Tab title="Kotlin">
+
+
+
+```kotlin
+    private val participantUpdateListener = object : DyteParticipantUpdateListener {
+        override fun onScreenShareStarted(participant: DyteRemoteParticipant) {
+            // your code here to handle screen share started
+        }
+
+        override fun onScreenShareEnded(participant: DyteRemoteParticipant) {
+            // your code here to handle screen share ended
+        }
+    }
+```
+
+  
+
+</Tab>
+
+
+
+  
+
+<Tab title="Java">
+
+
+
+```java
+    DyteParticipantUpdateListener participantUpdateListener = new DyteParticipantUpdateListener() {
+        @Override
+        public void onScreenShareStarted(DyteRemoteParticipant participant) {
+            // your code here to handle screen share started
+        }
+
+        @Override
+        public void onScreenShareEnded(DyteRemoteParticipant participant) {
+            // your code here to handle screen share ended
+        }
+    }
+```
+
+  
+
+</Tab>
+
+
+
+
+</Tabs>
+
+

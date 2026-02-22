@@ -1,0 +1,154 @@
+---
+title: "Installation"
+---
+
+<Tabs>
+
+
+  
+
+<Tab title="Tab">
+
+
+Install the SDK using npm.
+
+```shell
+npm install @dytesdk/react-native-core @dyteinternals/react-native-webrtc
+```
+
+  
+
+</Tab>
+
+
+  
+
+<Tab title="Tab">
+
+
+Install the SDK using yarn.
+
+```shell
+yarn add @dytesdk/react-native-core @dyteinternals/react-native-webrtc
+```
+
+  
+
+</Tab>
+
+
+
+
+</Tabs>
+
+
+
+[![npm version](https://badge.fury.io/js/@dytesdk%2Freact-native-core.svg)](https://badge.fury.io/js/@dytesdk%2Freact-native-core)
+
+
+
+<Tabs>
+
+
+  
+
+<Tab title="Tab">
+
+
+
+
+
+<Info>
+
+without any additional steps.
+
+</Info>
+
+
+
+1. Edit your `android/gradle.properties` and add the following line
+
+```groovy
+android.enableDexingArtifactTransform.desugaring=false
+```
+
+2. Create / append to the file `android/app/proguard-rules.pro`
+
+```groovy
+-keep class io.webrtc.** { *; }
+-dontwarn org.chromium.build.BuildHooksAndroid
+```
+
+3. In your `android/app/build.gradle` edit the release configuration and add the
+   following line importing the proguard configuration
+
+```groovy
+buildTypes {
+  release {
+    ...
+    ...
+    ...
+    proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+  }
+}
+
+```
+
+
+
+</Tab>
+
+
+
+
+<Tab title="Tab">
+
+
+
+
+
+<Tip>
+
+We support minimum OS version `12.0` for our iOS SDK.
+
+</Tip>
+
+
+
+1. Open your podfile and make sure your platform is set to ios 12
+
+```ruby
+platform :ios, '12.0'
+```
+
+2. Add the fonts and permission entries in `info.plist`
+
+```xml
+<key>NSBluetoothPeripheralUsageDescription</key>
+<string>We will use your Bluetooth to access your Bluetooth headphones.</string>
+<key>NSBluetoothAlwaysUsageDescription</key>
+<string>We will use your Bluetooth to access your Bluetooth headphones.</string>
+<key>NSCameraUsageDescription</key>
+<string>For people to see you during meetings, we need access to your camera.</string>
+<key>NSMicrophoneUsageDescription</key>
+<string>For people to hear you during meetings, we need access to your microphone.</string>
+<key>NSPhotoLibraryUsageDescription</key>
+<string>For people to share, we need access to your photos.</string>
+<key>UIViewControllerBasedStatusBarAppearance</key>
+<false/>
+```
+
+  
+
+</Tab>
+
+
+
+
+</Tabs>
+
+
+
+<head>
+  <title>React Native Core Installation</title>
+</head>

@@ -1,0 +1,31 @@
+---
+title: "Dyte Mixed Grid"
+---
+
+A grid component which handles screenshares, plugins and participants.
+
+```jsx live
+function CustomGrid() {
+  const active = useDyteSelector((m) => m.participants.active).toArray();
+  const { meeting } = useDyteMeeting();
+
+  return (
+    <DyteMixedGrid
+      participants={active}
+      pinnedParticipants={[]}
+      screenShareParticipants={[meeting.self]}
+      plugins={[]}
+      meeting={meeting}
+      style={{ height: '400px', width: '100%' }}
+    />
+  );
+}
+```
+
+## Props
+
+<PropsTable of="dyte-mixed-grid" />
+
+<head>
+  <title>React UI Kit DyteMixedGrid</title>
+</head>

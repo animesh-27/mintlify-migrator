@@ -1,0 +1,1940 @@
+{
+  "$schema": "https://mintlify.com/docs.json",
+  "theme": "mint",
+  "name": "Dyte Docs",
+  "colors": {
+    "primary": "#2160fd",
+    "light": "#2160fd",
+    "dark": "#2160fd"
+  },
+  "font": {
+    "family": "Inter"
+  },
+  "contextual": {
+    "options": [
+      "copy",
+      "view"
+    ]
+  },
+  "navbar": {
+    "links": [
+      {
+        "label": "Website",
+        "href": "https://dyte.io"
+      },
+      {
+        "label": "Support",
+        "href": "mailto:support@dyte.io"
+      }
+    ],
+    "primary": {
+      "type": "button",
+      "label": "Sign Up",
+      "href": "https://dev.dyte.io/register"
+    }
+  },
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Guides",
+        "groups": [
+          {
+            "group": "Getting Started",
+            "expanded": false,
+            "pages": [
+              "guides/guides"
+            ]
+          },
+          {
+            "group": "Live Video",
+            "expanded": false,
+            "pages": [
+              "guides/live-video/intro-video-conf",
+              "guides/live-video/get-started",
+              "guides/live-video/concepts",
+              "guides/live-video/build-live-video-app",
+              {
+                "group": "Client Setup",
+                "expanded": false,
+                "pages": [
+                  "guides/live-video/client-setup/index",
+                  "guides/live-video/client-setup/react",
+                  "guides/live-video/client-setup/angular",
+                  "guides/live-video/client-setup/javascript",
+                  "guides/live-video/client-setup/android",
+                  "guides/live-video/client-setup/ios",
+                  "guides/live-video/client-setup/flutter"
+                ]
+              },
+              "guides/live-video/next-steps"
+            ]
+          },
+          {
+            "group": "Voice Conferencing",
+            "expanded": false,
+            "pages": [
+              "guides/voice-conf/intro-voice-conf",
+              "guides/voice-conf/get-started",
+              "guides/voice-conf/concepts",
+              "guides/voice-conf/build-voice-app",
+              {
+                "group": "Client Setup",
+                "expanded": false,
+                "pages": [
+                  "guides/voice-conf/client-setup/index",
+                  "guides/voice-conf/client-setup/react",
+                  "guides/voice-conf/client-setup/angular",
+                  "guides/voice-conf/client-setup/javascript",
+                  "guides/voice-conf/client-setup/android",
+                  "guides/voice-conf/client-setup/ios",
+                  "guides/voice-conf/client-setup/flutter"
+                ]
+              },
+              "guides/voice-conf/next-steps"
+            ]
+          },
+          {
+            "group": "Interactive Livestream",
+            "expanded": false,
+            "pages": [
+              "guides/livestream/livestream-overview",
+              "guides/livestream/concepts",
+              "guides/livestream/get-started",
+              "guides/livestream/build-livestream-app",
+              {
+                "group": "Client Setup",
+                "expanded": false,
+                "pages": [
+                  "guides/livestream/client-setup/index",
+                  "guides/livestream/client-setup/angular",
+                  "guides/livestream/client-setup/javascript",
+                  "guides/livestream/client-setup/react",
+                  "guides/livestream/client-setup/android",
+                  "guides/livestream/client-setup/ios",
+                  "guides/livestream/client-setup/flutter"
+                ]
+              },
+              {
+                "group": "Advanced",
+                "expanded": false,
+                "pages": [
+                  "guides/livestream/advanced/configuring-permissions",
+                  "guides/livestream/advanced/livestream-any-rtmp"
+                ]
+              }
+            ]
+          },
+          {
+            "group": "📟 Interactive Tour",
+            "expanded": false,
+            "pages": [
+              "guides/interactive-onboarding/create-meeting",
+              "guides/interactive-onboarding/add-participant",
+              "guides/interactive-onboarding/init-sdk",
+              "guides/interactive-onboarding/join-meeting"
+            ]
+          },
+          {
+            "group": "Capabilities",
+            "expanded": false,
+            "pages": [
+              {
+                "group": "Audio & Transcriptions",
+                "expanded": false,
+                "pages": [
+                  "guides/capabilities/audio/processing",
+                  "guides/capabilities/audio/transcriptions",
+                  "guides/capabilities/audio/transcriptionAWS",
+                  "guides/capabilities/audio/transcriptionGoogle"
+                ]
+              },
+              {
+                "group": "Video",
+                "expanded": false,
+                "pages": [
+                  "guides/capabilities/video/processing",
+                  "guides/capabilities/video/add-virtual-background",
+                  "guides/capabilities/video/picture-in-picture"
+                ]
+              },
+              {
+                "group": "Recording",
+                "expanded": false,
+                "pages": [
+                  "guides/capabilities/recording/index",
+                  "guides/capabilities/recording/recording-overview",
+                  "guides/capabilities/recording/start-recording",
+                  "guides/capabilities/recording/stop-recording",
+                  "guides/capabilities/recording/custom-cloud-storage",
+                  "guides/capabilities/recording/monitor-status",
+                  "guides/capabilities/recording/configure-codecs",
+                  "guides/capabilities/recording/configure-audio-codec",
+                  {
+                    "group": "Advanced",
+                    "expanded": false,
+                    "pages": [
+                      "guides/capabilities/recording/advanced/add-watermark",
+                      "guides/capabilities/recording/advanced/manage-recording-config-hierarchy",
+                      "guides/capabilities/recording/advanced/configure-dyte-bucket-config",
+                      "guides/capabilities/recording/advanced/interactive-recording",
+                      "guides/capabilities/recording/advanced/create-record-app-using-sdks"
+                    ]
+                  }
+                ]
+              },
+              {
+                "group": "Screen Sharing",
+                "expanded": false,
+                "pages": [
+                  "guides/capabilities/screensharing/enabling",
+                  "guides/capabilities/screensharing/displaying"
+                ]
+              },
+              {
+                "group": "AI",
+                "expanded": false,
+                "pages": [
+                  "guides/capabilities/ai/index",
+                  "guides/capabilities/ai/meeting-summary",
+                  "guides/capabilities/ai/meeting-transcription"
+                ]
+              },
+              {
+                "group": "Chat",
+                "expanded": false,
+                "pages": [
+                  "guides/capabilities/chat/export-chat-dump"
+                ]
+              },
+              {
+                "group": "Plugins",
+                "expanded": false,
+                "pages": [
+                  "guides/capabilities/plugins/basics",
+                  "guides/capabilities/plugins/rendering",
+                  "guides/capabilities/plugins/docshare",
+                  "guides/capabilities/plugins/streamer",
+                  "guides/capabilities/plugins/whiteboard"
+                ]
+              },
+              {
+                "group": "Polls",
+                "expanded": false,
+                "pages": [
+                  "guides/capabilities/polls/index",
+                  "guides/capabilities/polls/getting_started",
+                  "guides/capabilities/polls/uikit"
+                ]
+              },
+              {
+                "group": "Webinar",
+                "expanded": false,
+                "pages": [
+                  "guides/capabilities/webinar/intro-webinar"
+                ]
+              },
+              {
+                "group": "Webhooks",
+                "expanded": false,
+                "pages": [
+                  "guides/capabilities/webhooks/index",
+                  "guides/capabilities/webhooks/webhooks-overview",
+                  "guides/capabilities/webhooks/webhooks-and-events",
+                  "guides/capabilities/webhooks/webhook-events",
+                  "guides/capabilities/webhooks/signatures"
+                ]
+              },
+              {
+                "group": "Breakout Rooms",
+                "expanded": false,
+                "pages": [
+                  "guides/capabilities/breakoutroom/introduction-breakout-rooms",
+                  "guides/capabilities/breakoutroom/create-breakout-rooms",
+                  "guides/capabilities/breakoutroom/integrating-breakout-rooms"
+                ]
+              },
+              "guides/capabilities/sip",
+              {
+                "group": "Misc",
+                "expanded": false,
+                "pages": [
+                  "guides/capabilities/misc/embed",
+                  "guides/capabilities/misc/livestreaming-other-platforms"
+                ]
+              }
+            ]
+          },
+          {
+            "group": "REST APIs",
+            "expanded": false,
+            "pages": [
+              "guides/rest-apis/quickstart",
+              "guides/rest-apis/livestream-dyte-meeting",
+              "guides/rest-apis/v2-migration-guide"
+            ]
+          },
+          {
+            "group": "Migrate from Twilio/Vonage",
+            "expanded": false,
+            "pages": [
+              {
+                "group": "Migrate from Twilio",
+                "expanded": false,
+                "pages": [
+                  "guides/migration/twilio/concepts-twilio-vs-dyte",
+                  "guides/migration/twilio/basics",
+                  "guides/migration/twilio/media",
+                  "guides/migration/twilio/misc",
+                  "guides/migration/twilio/feature-comparison",
+                  {
+                    "group": "Shim Library",
+                    "expanded": false,
+                    "pages": [
+                      "guides/migration/twilio/shim-library/twilio-shim-by-dyte",
+                      "guides/migration/twilio/shim-library/compatibility-shim-twilio"
+                    ]
+                  }
+                ]
+              },
+              {
+                "group": "Migrate from Vonage/OpenTok",
+                "expanded": false,
+                "pages": [
+                  "guides/migration/opentok/concepts-opentok-vs-dyte",
+                  "guides/migration/opentok/concept-media-opentok",
+                  "guides/migration/opentok/opentok-shim-by-dyte"
+                ]
+              }
+            ]
+          },
+          {
+            "group": "Dyte to RealtimeKit Migration",
+            "expanded": false,
+            "pages": [
+              "guides/realtimekit-migration/sdk-guide"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "SDKs",
+        "groups": [
+          {
+            "group": "Web",
+            "expanded": false,
+            "pages": [
+              {
+                "group": "React Web Core",
+                "expanded": false,
+                "pages": [
+                  "react-web-core/upgrade",
+                  "react-web-core/quickstart",
+                  {
+                    "group": "Pre-call",
+                    "expanded": false,
+                    "pages": [
+                      "react-web-core/pre-call/1-media-preview",
+                      "react-web-core/pre-call/2-handling-permissions",
+                      "react-web-core/pre-call/3-virtual-bg",
+                      "react-web-core/pre-call/4-meeting-meta",
+                      "react-web-core/pre-call/5-waiting-room"
+                    ]
+                  },
+                  "react-web-core/introduction",
+                  {
+                    "group": "Initialization",
+                    "expanded": false,
+                    "pages": [
+                      "react-web-core/advanced/advance"
+                    ]
+                  },
+                  {
+                    "group": "Local User",
+                    "expanded": false,
+                    "pages": [
+                      "react-web-core/local-user/introduction",
+                      "react-web-core/local-user/events",
+                      "react-web-core/local-user/manage-media-devices",
+                      "react-web-core/local-user/media-permission-errors",
+                      "react-web-core/local-user/extras"
+                    ]
+                  },
+                  {
+                    "group": "Remote Participants",
+                    "expanded": false,
+                    "pages": [
+                      "react-web-core/participants/remote-participants",
+                      "react-web-core/participants/participant-object",
+                      "react-web-core/participants/events",
+                      "react-web-core/participants/pip",
+                      "react-web-core/participants/permissions"
+                    ]
+                  },
+                  {
+                    "group": "Chat",
+                    "expanded": false,
+                    "pages": [
+                      "react-web-core/chat/introduction",
+                      "react-web-core/chat/sending-a-chat-message",
+                      "react-web-core/chat/receiving-chat-messages",
+                      "react-web-core/chat/edit-chat-messages",
+                      "react-web-core/chat/other-chat-functions"
+                    ]
+                  },
+                  {
+                    "group": "Polls",
+                    "expanded": false,
+                    "pages": [
+                      "react-web-core/polls/introduction",
+                      "react-web-core/polls/creating-a-poll",
+                      "react-web-core/polls/voting-on-a-poll",
+                      "react-web-core/polls/other-poll-functions"
+                    ]
+                  },
+                  {
+                    "group": "Plugins",
+                    "expanded": false,
+                    "pages": [
+                      "react-web-core/plugins/introduction",
+                      "react-web-core/plugins/enable-plugin",
+                      "react-web-core/plugins/disable-plugin",
+                      "react-web-core/plugins/extra"
+                    ]
+                  },
+                  "react-web-core/recording",
+                  "react-web-core/stage",
+                  "react-web-core/livestreaming",
+                  "react-web-core/room-metadata",
+                  {
+                    "group": "System Error Codes",
+                    "expanded": false,
+                    "pages": [
+                      "react-web-core/error-codes/error-code",
+                      "react-web-core/error-codes/error-code-zero-ten"
+                    ]
+                  },
+                  {
+                    "group": "Reference",
+                    "expanded": false,
+                    "pages": [
+                      "react-web-core/reference/DyteClient",
+                      "react-web-core/reference/DyteSelf",
+                      "react-web-core/reference/DyteParticipants",
+                      "react-web-core/reference/DyteParticipantMap",
+                      "react-web-core/reference/DyteParticipant",
+                      "react-web-core/reference/DytePermissionsPreset",
+                      "react-web-core/reference/DyteMeta",
+                      "react-web-core/reference/DyteChat",
+                      "react-web-core/reference/DytePolls",
+                      "react-web-core/reference/DytePlugins",
+                      "react-web-core/reference/DyteStage",
+                      "react-web-core/reference/DyteLivestream",
+                      "react-web-core/reference/DytePluginMap",
+                      "react-web-core/reference/DyteSelfMedia",
+                      "react-web-core/reference/DytePlugin",
+                      "react-web-core/reference/DyteThemePreset",
+                      "react-web-core/reference/DyteAi",
+                      "react-web-core/reference/DyteRemote",
+                      "react-web-core/reference/DyteConnectedMeetings",
+                      "react-web-core/reference/DyteRecording"
+                    ]
+                  },
+                  "react-web-core/release-notes"
+                ]
+              },
+              {
+                "group": "Web Core",
+                "expanded": false,
+                "pages": [
+                  "web-core/upgrade",
+                  "web-core/quickstart",
+                  {
+                    "group": "Pre-call",
+                    "expanded": false,
+                    "pages": [
+                      "web-core/pre-call/1-media-preview",
+                      "web-core/pre-call/2-handling-permissions",
+                      "web-core/pre-call/3-virtual-bg",
+                      "web-core/pre-call/4-meeting-meta",
+                      "web-core/pre-call/5-waiting-room"
+                    ]
+                  },
+                  "web-core/Introduction",
+                  {
+                    "group": "Initialization",
+                    "expanded": false,
+                    "pages": [
+                      "web-core/advanced/advance"
+                    ]
+                  },
+                  {
+                    "group": "Local User",
+                    "expanded": false,
+                    "pages": [
+                      "web-core/local-user/introduction",
+                      "web-core/local-user/events",
+                      "web-core/local-user/manage-media-devices",
+                      "web-core/local-user/media-permission-errors",
+                      "web-core/local-user/extras"
+                    ]
+                  },
+                  {
+                    "group": "Remote Participants",
+                    "expanded": false,
+                    "pages": [
+                      "web-core/participants/remote-participants",
+                      "web-core/participants/participant-object",
+                      "web-core/participants/events",
+                      "web-core/participants/pip",
+                      "web-core/participants/permissions"
+                    ]
+                  },
+                  {
+                    "group": "Chat",
+                    "expanded": false,
+                    "pages": [
+                      "web-core/chat/introduction",
+                      "web-core/chat/sending-a-chat-message",
+                      "web-core/chat/receiving-chat-messages",
+                      "web-core/chat/edit-chat-messages",
+                      "web-core/chat/other-chat-functions"
+                    ]
+                  },
+                  {
+                    "group": "Plugins",
+                    "expanded": false,
+                    "pages": [
+                      "web-core/plugins/introduction",
+                      "web-core/plugins/enable-plugin",
+                      "web-core/plugins/disable-plugin",
+                      "web-core/plugins/extra"
+                    ]
+                  },
+                  "web-core/recording",
+                  "web-core/stage",
+                  "web-core/livestreaming",
+                  {
+                    "group": "Polls",
+                    "expanded": false,
+                    "pages": [
+                      "web-core/polls/introduction",
+                      "web-core/polls/creating-a-poll",
+                      "web-core/polls/voting-on-a-poll",
+                      "web-core/polls/other-poll-functions"
+                    ]
+                  },
+                  "web-core/room-metadata",
+                  {
+                    "group": "System Error Codes",
+                    "expanded": false,
+                    "pages": [
+                      "web-core/error-codes/error-code",
+                      "web-core/error-codes/error-code-zero-ten"
+                    ]
+                  },
+                  {
+                    "group": "Reference",
+                    "expanded": false,
+                    "pages": [
+                      "web-core/reference/DyteClient",
+                      "web-core/reference/DyteSelf",
+                      "web-core/reference/DyteParticipants",
+                      "web-core/reference/DyteParticipantMap",
+                      "web-core/reference/DyteParticipant",
+                      "web-core/reference/DytePermissionsPreset",
+                      "web-core/reference/DyteMeta",
+                      "web-core/reference/DyteChat",
+                      "web-core/reference/DytePolls",
+                      "web-core/reference/DytePlugins",
+                      "web-core/reference/DyteStage",
+                      "web-core/reference/DyteLivestream",
+                      "web-core/reference/DytePluginMap",
+                      "web-core/reference/DytePlugin",
+                      "web-core/reference/DyteThemePreset",
+                      "web-core/reference/DyteRecording",
+                      "web-core/reference/DyteAi",
+                      "web-core/reference/DyteConnectedMeetings"
+                    ]
+                  },
+                  "web-core/release-notes"
+                ]
+              }
+            ]
+          },
+          {
+            "group": "Mobile",
+            "expanded": false,
+            "pages": [
+              {
+                "group": "Android",
+                "expanded": false,
+                "pages": [
+                  "android/quickstart",
+                  "android/customize-meeting-ui",
+                  "android/advanced-usage",
+                  {
+                    "group": "Pre-call preview UI",
+                    "expanded": false,
+                    "pages": [
+                      "android/build-pre-call-ui/default-setup-screen",
+                      {
+                        "group": "Build your own",
+                        "expanded": false,
+                        "pages": [
+                          "android/build-pre-call-ui/build-your-own/initial-code-skeleton",
+                          "android/build-pre-call-ui/build-your-own/edit-user-name",
+                          "android/build-pre-call-ui/build-your-own/add-audio-video-preview",
+                          "android/build-pre-call-ui/build-your-own/add-audio-video-device"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "group": "Render participant videos",
+                    "expanded": false,
+                    "pages": [
+                      "android/render-participant-videos/using-dytegrid",
+                      "android/render-participant-videos/custom-ui"
+                    ]
+                  },
+                  {
+                    "group": "Chat",
+                    "expanded": false,
+                    "pages": [
+                      "android/chat/prebuilt-screen"
+                    ]
+                  },
+                  {
+                    "group": "Participants",
+                    "expanded": false,
+                    "pages": [
+                      "android/participants/introduction",
+                      "android/participants/prebuilt"
+                    ]
+                  },
+                  {
+                    "group": "Plugins",
+                    "expanded": false,
+                    "pages": [
+                      "android/plugins/introduction",
+                      "android/plugins/prebuilt"
+                    ]
+                  },
+                  {
+                    "group": "Polls",
+                    "expanded": false,
+                    "pages": [
+                      "android/polls/prebuilt-polls-screen",
+                      "android/polls/prebuilt-create-poll"
+                    ]
+                  },
+                  {
+                    "group": "Components",
+                    "expanded": false,
+                    "pages": [
+                      "android/components/gallery",
+                      "android/components/dyte-audio-selector",
+                      "android/components/dyte-audio-visualizer",
+                      "android/components/dyte-avatar",
+                      "android/components/dyte-button",
+                      "android/components/dyte-camera-toggle",
+                      "android/components/dyte-chat",
+                      "android/components/dyte-clock",
+                      "android/components/dyte-controlbar-button",
+                      "android/components/dyte-grid-pagination",
+                      "android/components/dyte-grid",
+                      "android/components/dyte-idle-screen",
+                      "android/components/dyte-join-stage",
+                      "android/components/dyte-leave-button",
+                      "android/components/dyte-leave-meeting",
+                      "android/components/dyte-meeting-title",
+                      "android/components/dyte-meeting",
+                      "android/components/dyte-mic-toggle",
+                      "android/components/dyte-more-toggle",
+                      "android/components/dyte-name-tag",
+                      "android/components/dyte-participant-count",
+                      "android/components/dyte-participants",
+                      "android/components/dyte-plugins",
+                      "android/components/dyte-poll-form",
+                      "android/components/dyte-polls",
+                      "android/components/dyte-recording-indicator",
+                      "android/components/dyte-settings",
+                      "android/components/dyte-setup-screen",
+                      "android/components/dyte-video-selector",
+                      "android/components/dyte-webinar-stage-toggle"
+                    ]
+                  },
+                  "android/sample-app",
+                  "android/release-notes"
+                ]
+              },
+              {
+                "group": "Android Core",
+                "expanded": false,
+                "pages": [
+                  "android-core/quickstart",
+                  {
+                    "group": "2.x Upgrade Guide",
+                    "expanded": false,
+                    "pages": [
+                      "android-core/upgrade-v2/1-introduction",
+                      "android-core/upgrade-v2/2-breaking-changes-migration"
+                    ]
+                  },
+                  {
+                    "group": "Pre-call",
+                    "expanded": false,
+                    "pages": [
+                      "android-core/pre-call/1-media-preview",
+                      "android-core/pre-call/2-handling-permissions",
+                      "android-core/pre-call/3-meeting-meta",
+                      "android-core/pre-call/4-waiting-room"
+                    ]
+                  },
+                  "android-core/Introduction",
+                  {
+                    "group": "Local User",
+                    "expanded": false,
+                    "pages": [
+                      "android-core/local-user/introduction",
+                      "android-core/local-user/events",
+                      "android-core/local-user/manage-media-devices",
+                      "android-core/local-user/manage-permissions"
+                    ]
+                  },
+                  {
+                    "group": "Remote Participants",
+                    "expanded": false,
+                    "pages": [
+                      "android-core/participants/remote-participants",
+                      "android-core/participants/participant-object",
+                      "android-core/participants/events",
+                      "android-core/participants/waitlisted-participants"
+                    ]
+                  },
+                  {
+                    "group": "Chat",
+                    "expanded": false,
+                    "pages": [
+                      "android-core/chat/introduction",
+                      "android-core/chat/sending-a-chat-message",
+                      "android-core/chat/receiving-chat-messages"
+                    ]
+                  },
+                  {
+                    "group": "Plugins",
+                    "expanded": false,
+                    "pages": [
+                      "android-core/plugins/introduction",
+                      "android-core/plugins/enable-disable-plugin",
+                      "android-core/plugins/extra"
+                    ]
+                  },
+                  "android-core/recording",
+                  {
+                    "group": "Stage Management",
+                    "expanded": false,
+                    "pages": [
+                      "android-core/stage-management/1-introduction",
+                      "android-core/stage-management/2-host-controls",
+                      "android-core/stage-management/3-viewer-participants"
+                    ]
+                  },
+                  {
+                    "group": "Livestream",
+                    "expanded": false,
+                    "pages": [
+                      "android-core/livestream/introduction",
+                      "android-core/livestream/dyte-livestream-object",
+                      "android-core/livestream/dyte-livestream-listener"
+                    ]
+                  },
+                  {
+                    "group": "Polls",
+                    "expanded": false,
+                    "pages": [
+                      "android-core/polls/introduction",
+                      "android-core/polls/creating-a-poll",
+                      "android-core/polls/voting-on-a-poll"
+                    ]
+                  },
+                  "android-core/room-metadata",
+                  "android-core/error-codes",
+                  "android-core/release-notes"
+                ]
+              },
+              {
+                "group": "Flutter",
+                "expanded": false,
+                "pages": [
+                  "flutter/introduction",
+                  "flutter/quickstart",
+                  "flutter/design-token",
+                  {
+                    "group": "Components",
+                    "expanded": false,
+                    "pages": [
+                      "flutter/Components/dyte-audio-indicator-icon-widget",
+                      "flutter/Components/dyte-chat-icon-widget",
+                      "flutter/Components/dyte-join-button",
+                      "flutter/Components/dyte-leave-button",
+                      "flutter/Components/dyte-leave-meeting-dialog",
+                      "flutter/Components/dyte-meeting-title",
+                      "flutter/Components/dyte-name-tag-widget",
+                      "flutter/Components/dyte-participant-tile",
+                      "flutter/Components/dyte-participants-icon-widget",
+                      "flutter/Components/dyte-plugins-screen",
+                      "flutter/Components/dyte-polls-screen",
+                      "flutter/Components/dyte-provider",
+                      "flutter/Components/dyte-self-audio-toggle",
+                      "flutter/Components/dyte-self-video-toggle",
+                      "flutter/Components/dyte-setup-screen-component"
+                    ]
+                  },
+                  "flutter/meeting-locale",
+                  "flutter/release-notes"
+                ]
+              },
+              {
+                "group": "Flutter Core",
+                "expanded": false,
+                "pages": [
+                  "flutter-core/quickstart",
+                  {
+                    "group": "Pre-call",
+                    "expanded": false,
+                    "pages": [
+                      "flutter-core/pre-call/1-media-preview",
+                      "flutter-core/pre-call/3-meeting-meta",
+                      "flutter-core/pre-call/4-waiting-room"
+                    ]
+                  },
+                  "flutter-core/introduction",
+                  {
+                    "group": "Local User",
+                    "expanded": false,
+                    "pages": [
+                      "flutter-core/local-user/introduction",
+                      "flutter-core/local-user/events",
+                      "flutter-core/local-user/manage-media-devices",
+                      "flutter-core/local-user/manage-permissions",
+                      "flutter-core/local-user/screen-share-iOS-guide"
+                    ]
+                  },
+                  "flutter-core/room-metadata",
+                  {
+                    "group": "Chat",
+                    "expanded": false,
+                    "pages": [
+                      "flutter-core/chat/introduction",
+                      "flutter-core/chat/sending-a-chat-message",
+                      "flutter-core/chat/receiving-chat-messages"
+                    ]
+                  },
+                  "flutter-core/livestream",
+                  {
+                    "group": "Remote Participants",
+                    "expanded": false,
+                    "pages": [
+                      "flutter-core/participants/introduction",
+                      "flutter-core/participants/remote-participants",
+                      "flutter-core/participants/participant-object",
+                      "flutter-core/participants/events",
+                      "flutter-core/participants/waitlisted-participants"
+                    ]
+                  },
+                  {
+                    "group": "Polls",
+                    "expanded": false,
+                    "pages": [
+                      "flutter-core/polls/introduction",
+                      "flutter-core/polls/creating-a-poll",
+                      "flutter-core/polls/voting-on-a-poll"
+                    ]
+                  },
+                  {
+                    "group": "Stage Management",
+                    "expanded": false,
+                    "pages": [
+                      "flutter-core/stage-management/introduction",
+                      "flutter-core/stage-management/host-controls",
+                      "flutter-core/stage-management/viewer-participants"
+                    ]
+                  },
+                  "flutter-core/recording",
+                  "flutter-core/host-actions",
+                  "flutter-core/release-notes"
+                ]
+              },
+              {
+                "group": "iOS",
+                "expanded": false,
+                "pages": [
+                  "ios/intro-ios-uikit",
+                  "ios/quickstart",
+                  "ios/design-system",
+                  "ios/events",
+                  {
+                    "group": "Pre-call preview UI",
+                    "expanded": false,
+                    "pages": [
+                      "ios/build-pre-call-ui/default-setup-screen",
+                      {
+                        "group": "Build your own",
+                        "expanded": false,
+                        "pages": [
+                          "ios/build-pre-call-ui/build-your-own/initial-code-skeleton",
+                          "ios/build-pre-call-ui/build-your-own/dyte-setting"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "group": "Rendering participant video",
+                    "expanded": false,
+                    "pages": [
+                      "ios/rendering-participant-video/using-dyteGrid",
+                      "ios/rendering-participant-video/build-your-own-grid"
+                    ]
+                  },
+                  {
+                    "group": "Chat",
+                    "expanded": false,
+                    "pages": [
+                      "ios/chat/pre-built-chat-screen",
+                      "ios/chat/components-in-chat",
+                      "ios/chat/attachments-in-chat"
+                    ]
+                  },
+                  {
+                    "group": "Settings",
+                    "expanded": false,
+                    "pages": [
+                      "ios/Pre-Built-Settings_Guides/Settings"
+                    ]
+                  },
+                  {
+                    "group": "Plugins",
+                    "expanded": false,
+                    "pages": [
+                      "ios/Pre-Built-Plugins_Guides/load-plugin",
+                      "ios/Pre-Built-Plugins_Guides/Plugins"
+                    ]
+                  },
+                  {
+                    "group": "Participants",
+                    "expanded": false,
+                    "pages": [
+                      "ios/participants/introduction",
+                      "ios/participants/pre-built-participants-screen",
+                      "ios/participants/type-of-participants",
+                      "ios/participants/host-controls"
+                    ]
+                  },
+                  {
+                    "group": "Components",
+                    "expanded": false,
+                    "pages": [
+                      "ios/components/dyte-active-tab-selector-view",
+                      "ios/components/dyte-avatar",
+                      "ios/components/dyte-button",
+                      "ios/components/dyte-camera-toggle",
+                      "ios/components/dyte-chat",
+                      "ios/components/dyte-clock",
+                      "ios/components/dyte-configure-alertview-protocol",
+                      "ios/components/dyte-controlbar-button",
+                      "ios/components/dyte-end-meeting",
+                      "ios/components/dyte-grid-pagination",
+                      "ios/components/dyte-grid",
+                      "ios/components/dyte-join-stage",
+                      "ios/components/dyte-leave-alert-actions",
+                      "ios/components/dyte-leave-meeting-alert",
+                      "ios/components/dyte-meeting-titlelabel",
+                      "ios/components/dyte-meeting",
+                      "ios/components/dyte-mic-toggle",
+                      "ios/components/dyte-more-toggle",
+                      "ios/components/dyte-name-tag",
+                      "ios/components/dyte-navigationbar",
+                      "ios/components/dyte-participant-count",
+                      "ios/components/dyte-participant-tile-view",
+                      "ios/components/dyte-participants",
+                      "ios/components/dyte-plugin-view",
+                      "ios/components/dyte-plugins",
+                      "ios/components/dyte-pluginScreenShareTab-button",
+                      "ios/components/dyte-poll-form",
+                      "ios/components/dyte-polls",
+                      "ios/components/dyte-recording-indicator",
+                      "ios/components/dyte-settings",
+                      "ios/components/dyte-setup-screen-delegate",
+                      "ios/components/dyte-setup-screen",
+                      "ios/components/dyte-webinar-stage-toggle"
+                    ]
+                  },
+                  {
+                    "group": "Helper-Classes",
+                    "expanded": false,
+                    "pages": [
+                      "ios/helper-classes/dyte-plugin-view-model"
+                    ]
+                  },
+                  {
+                    "group": "Polls",
+                    "expanded": false,
+                    "pages": [
+                      "ios/Pre-Built-Polls_Guides/Polls",
+                      "ios/Pre-Built-Polls_Guides/prebuilt_polls"
+                    ]
+                  },
+                  "ios/release-notes"
+                ]
+              },
+              {
+                "group": "iOS Core",
+                "expanded": false,
+                "pages": [
+                  "ios-core/quickstart",
+                  {
+                    "group": "2.x Upgrade Guide",
+                    "expanded": false,
+                    "pages": [
+                      "ios-core/upgrade-v2/1-introduction",
+                      "ios-core/upgrade-v2/2-breaking-changes-migration"
+                    ]
+                  },
+                  {
+                    "group": "Pre-call",
+                    "expanded": false,
+                    "pages": [
+                      "ios-core/pre-call/1-media-preview",
+                      "ios-core/pre-call/2-handling-permissions",
+                      "ios-core/pre-call/3-meeting-meta",
+                      "ios-core/pre-call/4-waiting-room"
+                    ]
+                  },
+                  "ios-core/Introduction",
+                  {
+                    "group": "Local User",
+                    "expanded": false,
+                    "pages": [
+                      "ios-core/local-user/events",
+                      "ios-core/local-user/introduction",
+                      "ios-core/local-user/manage-media-devices",
+                      "ios-core/local-user/manage-permissions",
+                      "ios-core/local-user/screen-share-guide"
+                    ]
+                  },
+                  {
+                    "group": "Remote Participants",
+                    "expanded": false,
+                    "pages": [
+                      "ios-core/participants/remote-participants",
+                      "ios-core/participants/participant-object",
+                      "ios-core/participants/events",
+                      "ios-core/participants/waitlisted-participants"
+                    ]
+                  },
+                  {
+                    "group": "Chat",
+                    "expanded": false,
+                    "pages": [
+                      "ios-core/chat/introduction",
+                      "ios-core/chat/sending-a-chat-message",
+                      "ios-core/chat/receiving-chat-messages"
+                    ]
+                  },
+                  "ios-core/room-metadata",
+                  {
+                    "group": "Plugins",
+                    "expanded": false,
+                    "pages": [
+                      "ios-core/plugins/introduction",
+                      "ios-core/plugins/enable-plugin",
+                      "ios-core/plugins/disable-plugin",
+                      "ios-core/plugins/extra"
+                    ]
+                  },
+                  "ios-core/recording",
+                  {
+                    "group": "Stage Management",
+                    "expanded": false,
+                    "pages": [
+                      "ios-core/stage-management/1-introduction",
+                      "ios-core/stage-management/2-host-controls",
+                      "ios-core/stage-management/3-viewer-participants"
+                    ]
+                  },
+                  "ios-core/livestreaming",
+                  {
+                    "group": "Polls",
+                    "expanded": false,
+                    "pages": [
+                      "ios-core/polls/introduction",
+                      "ios-core/polls/creating-a-poll",
+                      "ios-core/polls/voting-on-a-poll"
+                    ]
+                  },
+                  "ios-core/error-codes",
+                  "ios-core/release-notes"
+                ]
+              }
+            ]
+          },
+          {
+            "group": "React Native",
+            "expanded": false,
+            "pages": [
+              {
+                "group": "React Native",
+                "expanded": false,
+                "pages": [
+                  "react-native/quickstart",
+                  "react-native/installation",
+                  "react-native/usage",
+                  "react-native/customize-meeting-ui",
+                  "react-native/advanced-usage",
+                  "react-native/events",
+                  "react-native/sample-app",
+                  {
+                    "group": "Reference",
+                    "expanded": false,
+                    "pages": [
+                      "react-native/reference/dyte-meeting",
+                      "react-native/reference/connection-config",
+                      "react-native/reference/meeting",
+                      "react-native/reference/participant",
+                      "react-native/reference/self-participant",
+                      "react-native/reference/dyte-errors",
+                      "react-native/reference/dyte-meeting-events",
+                      "react-native/reference/dyte-ui-config",
+                      "react-native/reference/chat-message",
+                      "react-native/reference/dyte-plugin"
+                    ]
+                  }
+                ]
+              },
+              {
+                "group": "Rn Core",
+                "expanded": false,
+                "pages": [
+                  "rn-core/installation",
+                  "rn-core/quickstart",
+                  {
+                    "group": "Pre-call",
+                    "expanded": false,
+                    "pages": [
+                      "rn-core/pre-call/1-media-preview",
+                      "rn-core/pre-call/2-handling-permissions",
+                      "rn-core/pre-call/4-meeting-meta",
+                      "rn-core/pre-call/5-waiting-room"
+                    ]
+                  },
+                  {
+                    "group": "Local User",
+                    "expanded": false,
+                    "pages": [
+                      "rn-core/local-user/introduction",
+                      "rn-core/local-user/events",
+                      "rn-core/local-user/manage-media-devices",
+                      "rn-core/local-user/media-permission-errors",
+                      "rn-core/local-user/extras"
+                    ]
+                  },
+                  "rn-core/room-metadata",
+                  {
+                    "group": "Remote Participants",
+                    "expanded": false,
+                    "pages": [
+                      "rn-core/participants/remote-participants",
+                      "rn-core/participants/participant-object",
+                      "rn-core/participants/events",
+                      "rn-core/participants/permissions"
+                    ]
+                  },
+                  {
+                    "group": "Chat",
+                    "expanded": false,
+                    "pages": [
+                      "rn-core/chat/introduction",
+                      "rn-core/chat/sending-a-chat-message",
+                      "rn-core/chat/receiving-chat-messages",
+                      "rn-core/chat/edit-chat-messages",
+                      "rn-core/chat/other-chat-functions"
+                    ]
+                  },
+                  {
+                    "group": "Polls",
+                    "expanded": false,
+                    "pages": [
+                      "rn-core/polls/introduction",
+                      "rn-core/polls/creating-a-poll",
+                      "rn-core/polls/voting-on-a-poll",
+                      "rn-core/polls/other-poll-functions"
+                    ]
+                  },
+                  {
+                    "group": "Plugins",
+                    "expanded": false,
+                    "pages": [
+                      "rn-core/plugins/introduction",
+                      "rn-core/plugins/enable-plugin",
+                      "rn-core/plugins/disable-plugin",
+                      "rn-core/plugins/extra"
+                    ]
+                  },
+                  "rn-core/recording",
+                  "rn-core/stage",
+                  "rn-core/livestreaming",
+                  {
+                    "group": "System Error Codes",
+                    "expanded": false,
+                    "pages": [
+                      "rn-core/error-codes/error-code",
+                      "rn-core/error-codes/error-code-zero-ten"
+                    ]
+                  },
+                  {
+                    "group": "Reference",
+                    "expanded": false,
+                    "pages": [
+                      "rn-core/reference/DyteClient",
+                      "rn-core/reference/DyteSelf",
+                      "rn-core/reference/DyteParticipants",
+                      "rn-core/reference/DyteParticipantMap",
+                      "rn-core/reference/DyteParticipant",
+                      "rn-core/reference/DytePermissionsPreset",
+                      "rn-core/reference/DyteMeta",
+                      "rn-core/reference/DyteChat",
+                      "rn-core/reference/DytePolls",
+                      "rn-core/reference/DytePlugins",
+                      "rn-core/reference/DyteStage",
+                      "rn-core/reference/DyteLivestream",
+                      "rn-core/reference/DytePluginMap",
+                      "rn-core/reference/DyteSelfMedia",
+                      "rn-core/reference/DytePlugin",
+                      "rn-core/reference/DyteThemePreset",
+                      "rn-core/reference/DyteAi",
+                      "rn-core/reference/DyteRemote",
+                      "rn-core/reference/DyteConnectedMeetings",
+                      "rn-core/reference/DyteRecording"
+                    ]
+                  },
+                  "rn-core/release-notes"
+                ]
+              },
+              {
+                "group": "Rn UI Kit",
+                "expanded": false,
+                "pages": [
+                  "rn-ui-kit/introduction",
+                  "rn-ui-kit/quickstart",
+                  "rn-ui-kit/design-system",
+                  "rn-ui-kit/integrate",
+                  "rn-ui-kit/using-hooks",
+                  {
+                    "group": "Pre-call preview UI",
+                    "expanded": false,
+                    "pages": [
+                      "rn-ui-kit/build-pre-call-ui/default-setup-screen",
+                      {
+                        "group": "Build your own",
+                        "expanded": false,
+                        "pages": [
+                          "rn-ui-kit/build-pre-call-ui/build-your-own/initial-code-skeleton",
+                          "rn-ui-kit/build-pre-call-ui/build-your-own/edit-user-name",
+                          "rn-ui-kit/build-pre-call-ui/build-your-own/add-audio-video-preview",
+                          "rn-ui-kit/build-pre-call-ui/build-your-own/add-audio-video-device"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "group": "In-call UI",
+                    "expanded": false,
+                    "pages": [
+                      "rn-ui-kit/build-in-call-ui/default-meeting-ui",
+                      {
+                        "group": "Build your own",
+                        "expanded": false,
+                        "pages": [
+                          "rn-ui-kit/build-in-call-ui/build-your-own/handling-states-and-configs",
+                          "rn-ui-kit/build-in-call-ui/build-your-own/states based UI Split",
+                          "rn-ui-kit/build-in-call-ui/build-your-own/customize-header",
+                          "rn-ui-kit/build-in-call-ui/build-your-own/customize-control-bar",
+                          "rn-ui-kit/build-in-call-ui/build-your-own/add-custom-sidebar"
+                        ]
+                      }
+                    ]
+                  },
+                  "rn-ui-kit/display-videos",
+                  {
+                    "group": "Components",
+                    "expanded": false,
+                    "pages": [
+                      "rn-ui-kit/components/gallery",
+                      "rn-ui-kit/components/dyte-avatar",
+                      "rn-ui-kit/components/dyte-button",
+                      "rn-ui-kit/components/dyte-camera-toggle",
+                      "rn-ui-kit/components/dyte-chat-toggle",
+                      "rn-ui-kit/components/dyte-chat",
+                      "rn-ui-kit/components/dyte-clock",
+                      "rn-ui-kit/components/dyte-controlbar-button",
+                      "rn-ui-kit/components/dyte-controlbar",
+                      "rn-ui-kit/components/dyte-dialog-manager",
+                      "rn-ui-kit/components/dyte-dialog",
+                      "rn-ui-kit/components/dyte-ended-screen",
+                      "rn-ui-kit/components/dyte-file-message",
+                      "rn-ui-kit/components/dyte-grid-pagination",
+                      "rn-ui-kit/components/dyte-grid",
+                      "rn-ui-kit/components/dyte-header",
+                      "rn-ui-kit/components/dyte-icon",
+                      "rn-ui-kit/components/dyte-idle-screen",
+                      "rn-ui-kit/components/dyte-image-message",
+                      "rn-ui-kit/components/dyte-image-viewer",
+                      "rn-ui-kit/components/dyte-join-stage",
+                      "rn-ui-kit/components/dyte-leave-button",
+                      "rn-ui-kit/components/dyte-leave-meeting",
+                      "rn-ui-kit/components/dyte-logo",
+                      "rn-ui-kit/components/dyte-meeting-title",
+                      "rn-ui-kit/components/dyte-meeting",
+                      "rn-ui-kit/components/dyte-menu-item",
+                      "rn-ui-kit/components/dyte-menu-list",
+                      "rn-ui-kit/components/dyte-menu",
+                      "rn-ui-kit/components/dyte-mic-toggle",
+                      "rn-ui-kit/components/dyte-more-toggle",
+                      "rn-ui-kit/components/dyte-mute-all-button",
+                      "rn-ui-kit/components/dyte-name-tag",
+                      "rn-ui-kit/components/dyte-notification",
+                      "rn-ui-kit/components/dyte-notifications",
+                      "rn-ui-kit/components/dyte-participant-count",
+                      "rn-ui-kit/components/dyte-participant-tile",
+                      "rn-ui-kit/components/dyte-participant",
+                      "rn-ui-kit/components/dyte-participants-toggle",
+                      "rn-ui-kit/components/dyte-participants",
+                      "rn-ui-kit/components/dyte-permissions-message",
+                      "rn-ui-kit/components/dyte-plugin-main",
+                      "rn-ui-kit/components/dyte-plugins-toggle",
+                      "rn-ui-kit/components/dyte-plugins",
+                      "rn-ui-kit/components/dyte-poll-form",
+                      "rn-ui-kit/components/dyte-poll",
+                      "rn-ui-kit/components/dyte-polls-toggle",
+                      "rn-ui-kit/components/dyte-polls",
+                      "rn-ui-kit/components/dyte-recording-indicator",
+                      "rn-ui-kit/components/dyte-recording-toggle",
+                      "rn-ui-kit/components/dyte-screen-share-toggle",
+                      "rn-ui-kit/components/dyte-screenshare-view",
+                      "rn-ui-kit/components/dyte-settings-audio",
+                      "rn-ui-kit/components/dyte-settings-toggle",
+                      "rn-ui-kit/components/dyte-settings-video",
+                      "rn-ui-kit/components/dyte-settings",
+                      "rn-ui-kit/components/dyte-setup-screen",
+                      "rn-ui-kit/components/dyte-sidebar",
+                      "rn-ui-kit/components/dyte-simple-grid",
+                      "rn-ui-kit/components/dyte-spinner",
+                      "rn-ui-kit/components/dyte-spotlight-grid",
+                      "rn-ui-kit/components/dyte-text-field",
+                      "rn-ui-kit/components/dyte-text",
+                      "rn-ui-kit/components/dyte-waiting-screen",
+                      "rn-ui-kit/components/dyte-webinar-stage-toggle"
+                    ]
+                  },
+                  {
+                    "group": "Customizations",
+                    "expanded": false,
+                    "pages": [
+                      "rn-ui-kit/customizations/custom-iconpack",
+                      "rn-ui-kit/customizations/custom-locale"
+                    ]
+                  },
+                  "rn-ui-kit/release-notes",
+                  {
+                    "group": "Reference",
+                    "expanded": false,
+                    "pages": [
+                      {
+                        "group": "Interfaces",
+                        "expanded": false,
+                        "pages": [
+                          "rn-ui-kit/reference/interfaces/Notification",
+                          "rn-ui-kit/reference/interfaces/PollObject",
+                          "rn-ui-kit/reference/interfaces/States",
+                          "rn-ui-kit/reference/interfaces/UIConfig",
+                          "rn-ui-kit/reference/interfaces/UserPreferences"
+                        ]
+                      },
+                      {
+                        "group": "Classes",
+                        "expanded": false,
+                        "pages": [
+                          "rn-ui-kit/reference/classes/DyteNotificationsAudio"
+                        ]
+                      },
+                      "rn-ui-kit/reference/reference"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "group": "UI Kits",
+            "expanded": false,
+            "pages": [
+              {
+                "group": "Angular UI Kit",
+                "expanded": false,
+                "pages": [
+                  "angular-ui-kit/introduction",
+                  "angular-ui-kit/quickstart",
+                  "angular-ui-kit/design-system",
+                  {
+                    "group": "Build your own UI",
+                    "expanded": false,
+                    "pages": [
+                      "angular-ui-kit/basics/components-basics",
+                      "angular-ui-kit/basics/pre-requisite"
+                    ]
+                  },
+                  {
+                    "group": "Components",
+                    "expanded": false,
+                    "pages": [
+                      "angular-ui-kit/components/gallery",
+                      "angular-ui-kit/components/dyte-audio-visualizer",
+                      "angular-ui-kit/components/dyte-avatar",
+                      "angular-ui-kit/components/dyte-button",
+                      "angular-ui-kit/components/dyte-camera-toggle",
+                      "angular-ui-kit/components/dyte-chat-toggle",
+                      "angular-ui-kit/components/dyte-chat",
+                      "angular-ui-kit/components/dyte-clock",
+                      "angular-ui-kit/components/dyte-confirmation-modal",
+                      "angular-ui-kit/components/dyte-controlbar-button",
+                      "angular-ui-kit/components/dyte-controlbar",
+                      "angular-ui-kit/components/dyte-dialog-manager",
+                      "angular-ui-kit/components/dyte-dialog",
+                      "angular-ui-kit/components/dyte-emoji-picker",
+                      "angular-ui-kit/components/dyte-ended-screen",
+                      "angular-ui-kit/components/dyte-file-message",
+                      "angular-ui-kit/components/dyte-fullscreen-toggle",
+                      "angular-ui-kit/components/dyte-grid-pagination",
+                      "angular-ui-kit/components/dyte-grid",
+                      "angular-ui-kit/components/dyte-header",
+                      "angular-ui-kit/components/dyte-icon",
+                      "angular-ui-kit/components/dyte-idle-screen",
+                      "angular-ui-kit/components/dyte-image-message",
+                      "angular-ui-kit/components/dyte-image-viewer",
+                      "angular-ui-kit/components/dyte-leave-button",
+                      "angular-ui-kit/components/dyte-leave-meeting",
+                      "angular-ui-kit/components/dyte-logo",
+                      "angular-ui-kit/components/dyte-meeting-title",
+                      "angular-ui-kit/components/dyte-meeting",
+                      "angular-ui-kit/components/dyte-menu-item",
+                      "angular-ui-kit/components/dyte-menu-list",
+                      "angular-ui-kit/components/dyte-menu",
+                      "angular-ui-kit/components/dyte-mic-toggle",
+                      "angular-ui-kit/components/dyte-mixed-grid",
+                      "angular-ui-kit/components/dyte-more-toggle",
+                      "angular-ui-kit/components/dyte-name-tag",
+                      "angular-ui-kit/components/dyte-network-indicator",
+                      "angular-ui-kit/components/dyte-notification",
+                      "angular-ui-kit/components/dyte-notifications",
+                      "angular-ui-kit/components/dyte-overlay-modal",
+                      "angular-ui-kit/components/dyte-participant-count",
+                      "angular-ui-kit/components/dyte-participant-tile",
+                      "angular-ui-kit/components/dyte-participant",
+                      "angular-ui-kit/components/dyte-participants-audio",
+                      "angular-ui-kit/components/dyte-participants-stage-list",
+                      "angular-ui-kit/components/dyte-participants-toggle",
+                      "angular-ui-kit/components/dyte-participants",
+                      "angular-ui-kit/components/dyte-permissions-message",
+                      "angular-ui-kit/components/dyte-plugin-main",
+                      "angular-ui-kit/components/dyte-plugins-toggle",
+                      "angular-ui-kit/components/dyte-plugins",
+                      "angular-ui-kit/components/dyte-poll-form",
+                      "angular-ui-kit/components/dyte-poll",
+                      "angular-ui-kit/components/dyte-polls-toggle",
+                      "angular-ui-kit/components/dyte-polls",
+                      "angular-ui-kit/components/dyte-recording-indicator",
+                      "angular-ui-kit/components/dyte-recording-toggle",
+                      "angular-ui-kit/components/dyte-remote-access-manager",
+                      "angular-ui-kit/components/dyte-screen-share-toggle",
+                      "angular-ui-kit/components/dyte-screenshare-view",
+                      "angular-ui-kit/components/dyte-settings-audio",
+                      "angular-ui-kit/components/dyte-settings-toggle",
+                      "angular-ui-kit/components/dyte-settings-video",
+                      "angular-ui-kit/components/dyte-settings",
+                      "angular-ui-kit/components/dyte-setup-screen",
+                      "angular-ui-kit/components/dyte-sidebar",
+                      "angular-ui-kit/components/dyte-simple-grid",
+                      "angular-ui-kit/components/dyte-spinner",
+                      "angular-ui-kit/components/dyte-spotlight-grid",
+                      "angular-ui-kit/components/dyte-stage",
+                      "angular-ui-kit/components/dyte-switch",
+                      "angular-ui-kit/components/dyte-text-field",
+                      "angular-ui-kit/components/dyte-text-message",
+                      "angular-ui-kit/components/dyte-tooltip",
+                      "angular-ui-kit/components/dyte-viewer-count"
+                    ]
+                  },
+                  {
+                    "group": "Customizations",
+                    "expanded": false,
+                    "pages": [
+                      "angular-ui-kit/customizations/custom-iconpack",
+                      "angular-ui-kit/customizations/custom-locale"
+                    ]
+                  },
+                  "angular-ui-kit/release-notes",
+                  {
+                    "group": "Reference",
+                    "expanded": false,
+                    "pages": [
+                      {
+                        "group": "Interfaces",
+                        "expanded": false,
+                        "pages": [
+                          "angular-ui-kit/reference/interfaces/Notification",
+                          "angular-ui-kit/reference/interfaces/PollObject",
+                          "angular-ui-kit/reference/interfaces/States",
+                          "angular-ui-kit/reference/interfaces/UIConfig",
+                          "angular-ui-kit/reference/interfaces/UserPreferences"
+                        ]
+                      },
+                      {
+                        "group": "Classes",
+                        "expanded": false,
+                        "pages": [
+                          "angular-ui-kit/reference/classes/DyteNotificationsAudio"
+                        ]
+                      },
+                      "angular-ui-kit/reference/reference"
+                    ]
+                  }
+                ]
+              },
+              {
+                "group": "React UI Kit",
+                "expanded": false,
+                "pages": [
+                  "react-ui-kit/introduction",
+                  "react-ui-kit/quickstart",
+                  "react-ui-kit/design-system",
+                  "react-ui-kit/integrate",
+                  "react-ui-kit/using-hooks",
+                  {
+                    "group": "Pre-call preview UI",
+                    "expanded": false,
+                    "pages": [
+                      "react-ui-kit/build-pre-call-ui/default-setup-screen",
+                      {
+                        "group": "Build your own",
+                        "expanded": false,
+                        "pages": [
+                          "react-ui-kit/build-pre-call-ui/build-your-own/initial-code-skeleton",
+                          "react-ui-kit/build-pre-call-ui/build-your-own/edit-user-name",
+                          "react-ui-kit/build-pre-call-ui/build-your-own/add-audio-video-preview",
+                          "react-ui-kit/build-pre-call-ui/build-your-own/add-audio-video-device",
+                          "react-ui-kit/build-pre-call-ui/build-your-own/add-middleware"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "group": "In-call UI",
+                    "expanded": false,
+                    "pages": [
+                      "react-ui-kit/build-in-call-ui/default-meeting-ui",
+                      {
+                        "group": "Build your own",
+                        "expanded": false,
+                        "pages": [
+                          "react-ui-kit/build-in-call-ui/build-your-own/handling-states-and-configs",
+                          "react-ui-kit/build-in-call-ui/build-your-own/states-based-ui-split",
+                          "react-ui-kit/build-in-call-ui/build-your-own/customize-header",
+                          "react-ui-kit/build-in-call-ui/build-your-own/customize-control-bar",
+                          "react-ui-kit/build-in-call-ui/build-your-own/stage-ui-using-dyte-grid",
+                          "react-ui-kit/build-in-call-ui/build-your-own/add-custom-sidebar"
+                        ]
+                      }
+                    ]
+                  },
+                  "react-ui-kit/display-videos",
+                  {
+                    "group": "Components",
+                    "expanded": false,
+                    "pages": [
+                      "react-ui-kit/components/gallery",
+                      "react-ui-kit/components/dyte-audio-visualizer",
+                      "react-ui-kit/components/dyte-avatar",
+                      "react-ui-kit/components/dyte-button",
+                      "react-ui-kit/components/dyte-camera-toggle",
+                      "react-ui-kit/components/dyte-chat-toggle",
+                      "react-ui-kit/components/dyte-chat",
+                      "react-ui-kit/components/dyte-clock",
+                      "react-ui-kit/components/dyte-confirmation-modal",
+                      "react-ui-kit/components/dyte-controlbar-button",
+                      "react-ui-kit/components/dyte-controlbar",
+                      "react-ui-kit/components/dyte-dialog-manager",
+                      "react-ui-kit/components/dyte-dialog",
+                      "react-ui-kit/components/dyte-emoji-picker",
+                      "react-ui-kit/components/dyte-ended-screen",
+                      "react-ui-kit/components/dyte-file-message",
+                      "react-ui-kit/components/dyte-fullscreen-toggle",
+                      "react-ui-kit/components/dyte-grid-pagination",
+                      "react-ui-kit/components/dyte-grid",
+                      "react-ui-kit/components/dyte-header",
+                      "react-ui-kit/components/dyte-icon",
+                      "react-ui-kit/components/dyte-idle-screen",
+                      "react-ui-kit/components/dyte-image-message",
+                      "react-ui-kit/components/dyte-image-viewer",
+                      "react-ui-kit/components/dyte-leave-button",
+                      "react-ui-kit/components/dyte-leave-meeting",
+                      "react-ui-kit/components/dyte-logo",
+                      "react-ui-kit/components/dyte-meeting-title",
+                      "react-ui-kit/components/dyte-meeting",
+                      "react-ui-kit/components/dyte-menu-item",
+                      "react-ui-kit/components/dyte-menu-list",
+                      "react-ui-kit/components/dyte-menu",
+                      "react-ui-kit/components/dyte-mic-toggle",
+                      "react-ui-kit/components/dyte-mixed-grid",
+                      "react-ui-kit/components/dyte-more-toggle",
+                      "react-ui-kit/components/dyte-name-tag",
+                      "react-ui-kit/components/dyte-network-indicator",
+                      "react-ui-kit/components/dyte-notification",
+                      "react-ui-kit/components/dyte-notifications",
+                      "react-ui-kit/components/dyte-overlay-modal",
+                      "react-ui-kit/components/dyte-participant-count",
+                      "react-ui-kit/components/dyte-participant-tile",
+                      "react-ui-kit/components/dyte-participant",
+                      "react-ui-kit/components/dyte-participants-audio",
+                      "react-ui-kit/components/dyte-participants-stage-list",
+                      "react-ui-kit/components/dyte-participants-toggle",
+                      "react-ui-kit/components/dyte-participants",
+                      "react-ui-kit/components/dyte-permissions-message",
+                      "react-ui-kit/components/dyte-plugin-main",
+                      "react-ui-kit/components/dyte-plugins-toggle",
+                      "react-ui-kit/components/dyte-plugins",
+                      "react-ui-kit/components/dyte-poll-form",
+                      "react-ui-kit/components/dyte-poll",
+                      "react-ui-kit/components/dyte-polls-toggle",
+                      "react-ui-kit/components/dyte-polls",
+                      "react-ui-kit/components/dyte-recording-indicator",
+                      "react-ui-kit/components/dyte-recording-toggle",
+                      "react-ui-kit/components/dyte-remote-access-manager",
+                      "react-ui-kit/components/dyte-screen-share-toggle",
+                      "react-ui-kit/components/dyte-screenshare-view",
+                      "react-ui-kit/components/dyte-settings-audio",
+                      "react-ui-kit/components/dyte-settings-toggle",
+                      "react-ui-kit/components/dyte-settings-video",
+                      "react-ui-kit/components/dyte-settings",
+                      "react-ui-kit/components/dyte-setup-screen",
+                      "react-ui-kit/components/dyte-sidebar",
+                      "react-ui-kit/components/dyte-simple-grid",
+                      "react-ui-kit/components/dyte-spinner",
+                      "react-ui-kit/components/dyte-spotlight-grid",
+                      "react-ui-kit/components/dyte-stage",
+                      "react-ui-kit/components/dyte-switch",
+                      "react-ui-kit/components/dyte-text-field",
+                      "react-ui-kit/components/dyte-text-message",
+                      "react-ui-kit/components/dyte-tooltip",
+                      "react-ui-kit/components/dyte-viewer-count"
+                    ]
+                  },
+                  {
+                    "group": "Customizations",
+                    "expanded": false,
+                    "pages": [
+                      "react-ui-kit/customizations/custom-iconpack",
+                      "react-ui-kit/customizations/custom-locale"
+                    ]
+                  },
+                  "react-ui-kit/release-notes",
+                  {
+                    "group": "Reference",
+                    "expanded": false,
+                    "pages": [
+                      {
+                        "group": "Interfaces",
+                        "expanded": false,
+                        "pages": [
+                          "react-ui-kit/reference/interfaces/Notification",
+                          "react-ui-kit/reference/interfaces/PollObject",
+                          "react-ui-kit/reference/interfaces/States",
+                          "react-ui-kit/reference/interfaces/UIConfig",
+                          "react-ui-kit/reference/interfaces/UserPreferences"
+                        ]
+                      },
+                      {
+                        "group": "Classes",
+                        "expanded": false,
+                        "pages": [
+                          "react-ui-kit/reference/classes/DyteNotificationsAudio"
+                        ]
+                      },
+                      "react-ui-kit/reference/reference"
+                    ]
+                  }
+                ]
+              },
+              {
+                "group": "UI Kit",
+                "expanded": false,
+                "pages": [
+                  "ui-kit/introduction",
+                  "ui-kit/quickstart",
+                  "ui-kit/design-system",
+                  {
+                    "group": "Build your own UI",
+                    "expanded": false,
+                    "pages": [
+                      "ui-kit/basics/components-basics",
+                      "ui-kit/basics/pre-requisite"
+                    ]
+                  },
+                  {
+                    "group": "Components",
+                    "expanded": false,
+                    "pages": [
+                      "ui-kit/components/gallery",
+                      "ui-kit/components/dyte-audio-visualizer",
+                      "ui-kit/components/dyte-avatar",
+                      "ui-kit/components/dyte-button",
+                      "ui-kit/components/dyte-camera-toggle",
+                      "ui-kit/components/dyte-chat-toggle",
+                      "ui-kit/components/dyte-chat",
+                      "ui-kit/components/dyte-clock",
+                      "ui-kit/components/dyte-confirmation-modal",
+                      "ui-kit/components/dyte-controlbar-button",
+                      "ui-kit/components/dyte-controlbar",
+                      "ui-kit/components/dyte-dialog-manager",
+                      "ui-kit/components/dyte-dialog",
+                      "ui-kit/components/dyte-emoji-picker",
+                      "ui-kit/components/dyte-ended-screen",
+                      "ui-kit/components/dyte-file-message",
+                      "ui-kit/components/dyte-fullscreen-toggle",
+                      "ui-kit/components/dyte-grid-pagination",
+                      "ui-kit/components/dyte-grid",
+                      "ui-kit/components/dyte-header",
+                      "ui-kit/components/dyte-icon",
+                      "ui-kit/components/dyte-idle-screen",
+                      "ui-kit/components/dyte-image-message",
+                      "ui-kit/components/dyte-image-viewer",
+                      "ui-kit/components/dyte-leave-button",
+                      "ui-kit/components/dyte-leave-meeting",
+                      "ui-kit/components/dyte-logo",
+                      "ui-kit/components/dyte-meeting-title",
+                      "ui-kit/components/dyte-meeting",
+                      "ui-kit/components/dyte-menu-item",
+                      "ui-kit/components/dyte-menu-list",
+                      "ui-kit/components/dyte-menu",
+                      "ui-kit/components/dyte-mic-toggle",
+                      "ui-kit/components/dyte-mixed-grid",
+                      "ui-kit/components/dyte-more-toggle",
+                      "ui-kit/components/dyte-name-tag",
+                      "ui-kit/components/dyte-network-indicator",
+                      "ui-kit/components/dyte-notification",
+                      "ui-kit/components/dyte-notifications",
+                      "ui-kit/components/dyte-overlay-modal",
+                      "ui-kit/components/dyte-participant-count",
+                      "ui-kit/components/dyte-participant-tile",
+                      "ui-kit/components/dyte-participant",
+                      "ui-kit/components/dyte-participants-audio",
+                      "ui-kit/components/dyte-participants-stage-list",
+                      "ui-kit/components/dyte-participants-toggle",
+                      "ui-kit/components/dyte-participants",
+                      "ui-kit/components/dyte-permissions-message",
+                      "ui-kit/components/dyte-plugin-main",
+                      "ui-kit/components/dyte-plugins-toggle",
+                      "ui-kit/components/dyte-plugins",
+                      "ui-kit/components/dyte-poll-form",
+                      "ui-kit/components/dyte-poll",
+                      "ui-kit/components/dyte-polls-toggle",
+                      "ui-kit/components/dyte-polls",
+                      "ui-kit/components/dyte-recording-indicator",
+                      "ui-kit/components/dyte-recording-toggle",
+                      "ui-kit/components/dyte-remote-access-manager",
+                      "ui-kit/components/dyte-screen-share-toggle",
+                      "ui-kit/components/dyte-screenshare-view",
+                      "ui-kit/components/dyte-settings-audio",
+                      "ui-kit/components/dyte-settings-toggle",
+                      "ui-kit/components/dyte-settings-video",
+                      "ui-kit/components/dyte-settings",
+                      "ui-kit/components/dyte-setup-screen",
+                      "ui-kit/components/dyte-sidebar",
+                      "ui-kit/components/dyte-simple-grid",
+                      "ui-kit/components/dyte-spinner",
+                      "ui-kit/components/dyte-spotlight-grid",
+                      "ui-kit/components/dyte-stage",
+                      "ui-kit/components/dyte-switch",
+                      "ui-kit/components/dyte-text-field",
+                      "ui-kit/components/dyte-text-message",
+                      "ui-kit/components/dyte-tooltip",
+                      "ui-kit/components/dyte-viewer-count"
+                    ]
+                  },
+                  {
+                    "group": "Customizations",
+                    "expanded": false,
+                    "pages": [
+                      "ui-kit/customizations/custom-iconpack",
+                      "ui-kit/customizations/custom-locale"
+                    ]
+                  },
+                  "ui-kit/release-notes",
+                  {
+                    "group": "Reference",
+                    "expanded": false,
+                    "pages": [
+                      {
+                        "group": "Interfaces",
+                        "expanded": false,
+                        "pages": [
+                          "ui-kit/reference/interfaces/Notification",
+                          "ui-kit/reference/interfaces/PollObject",
+                          "ui-kit/reference/interfaces/States",
+                          "ui-kit/reference/interfaces/UIConfig",
+                          "ui-kit/reference/interfaces/UserPreferences"
+                        ]
+                      },
+                      {
+                        "group": "Classes",
+                        "expanded": false,
+                        "pages": [
+                          "ui-kit/reference/classes/DyteNotificationsAudio"
+                        ]
+                      },
+                      "ui-kit/reference/reference"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "group": "Other SDKs",
+            "expanded": false,
+            "pages": [
+              {
+                "group": "Plugin SDK",
+                "expanded": false,
+                "pages": [
+                  "plugin-sdk/introduction",
+                  "plugin-sdk/quickstart",
+                  {
+                    "group": "Getting Started",
+                    "expanded": false,
+                    "pages": [
+                      "plugin-sdk/setup/create",
+                      "plugin-sdk/setup/customize",
+                      "plugin-sdk/setup/publish",
+                      "plugin-sdk/setup/develop",
+                      "plugin-sdk/setup/manage"
+                    ]
+                  },
+                  {
+                    "group": "Usage",
+                    "expanded": false,
+                    "pages": [
+                      "plugin-sdk/usage/installation",
+                      {
+                        "group": "Basics",
+                        "expanded": false,
+                        "pages": [
+                          "plugin-sdk/usage/basic/initialize",
+                          "plugin-sdk/usage/basic/methods",
+                          "plugin-sdk/usage/basic/events"
+                        ]
+                      },
+                      {
+                        "group": "Meeting APIs",
+                        "expanded": false,
+                        "pages": [
+                          "plugin-sdk/usage/rooms-api/methods",
+                          "plugin-sdk/usage/rooms-api/events"
+                        ]
+                      },
+                      {
+                        "group": "Realtime Data Stores",
+                        "expanded": false,
+                        "pages": [
+                          "plugin-sdk/usage/stores-api/introduction",
+                          "plugin-sdk/usage/stores-api/manage-stores"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "group": "Guides",
+                    "expanded": false,
+                    "pages": [
+                      "plugin-sdk/guides/how-to-work-with-plugin-stores",
+                      "plugin-sdk/guides/exchange-data-between-plugin-and-meeting"
+                    ]
+                  },
+                  "plugin-sdk/frequently-asked-questions"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Tools",
+        "groups": [
+          {
+            "group": "CLI",
+            "expanded": false,
+            "pages": [
+              "cli/installation",
+              "cli/getting-started",
+              "cli/meetings",
+              "cli/recording",
+              "cli/plugins",
+              "cli/webhooks"
+            ]
+          },
+          {
+            "group": "Community Packages",
+            "expanded": false,
+            "pages": [
+              "community-packages/index",
+              {
+                "group": "Device Emulator",
+                "expanded": false,
+                "pages": [
+                  "community-packages/device-emulator/intro",
+                  "community-packages/device-emulator/examples"
+                ]
+              },
+              {
+                "group": "SocketIO Client",
+                "expanded": false,
+                "pages": [
+                  "community-packages/socketio-client/intro",
+                  "community-packages/socketio-client/initialization",
+                  "community-packages/socketio-client/emitting"
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "footer": {
+    "socials": {
+      "x": "https://x.com/dyte_io",
+      "github": "https://github.com/dyte-io"
+    },
+    "links": [
+      {
+        "header": "Company",
+        "items": [
+          {
+            "label": "About Us",
+            "href": "https://dyte.io"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,120 @@
+---
+title: "Media Permissions"
+---
+
+To get media permissions (audio/video) for localUser we can do as follows
+
+
+
+<Tabs>
+
+
+  
+
+<Tab title="Kotlin">
+
+
+
+```kotlin
+val isCameraPermissionGranted
+  = meeting.localUser.isCameraPermissionGranted
+val isMicrophonePermissionGranted
+  = meeting.localUser.isMicrophonePermissionGranted
+```
+
+  
+
+</Tab>
+
+
+
+  
+
+<Tab title="Java">
+
+
+
+```java
+boolean isCameraPermissionGranted
+  = meeting.localUser.isCameraPermissionGranted();
+boolean isMicrophonePermissionGranted
+  = meeting.localUser.isMicrophonePermissionGranted();
+```
+
+  
+
+</Tab>
+
+
+
+
+</Tabs>
+
+
+
+Similarly to listen to callbacks regarding media permissions once user joins
+the meeting
+
+
+
+<Tabs>
+
+
+  
+
+<Tab title="Kotlin">
+
+
+
+```kotlin
+meeting.addSelfEventsListener(object : DyteSelfEventsListener {
+    override fun onMeetingRoomJoinedWithoutCameraPermission() {
+    }
+
+    override fun onMeetingRoomJoinedWithoutMicPermission() {
+    }
+})
+```
+
+  
+
+</Tab>
+
+
+
+  
+
+<Tab title="Java">
+
+
+
+```kotlin
+meeting.addSelfEventsListener(new : DyteSelfEventsListener() {
+    @Override
+    public void onMeetingRoomJoinedWithoutCameraPermission() {
+    }
+
+    @Override
+    public void onMeetingRoomJoinedWithoutMicPermission() {
+    }
+});
+```
+
+  
+
+</Tab>
+
+
+
+
+</Tabs>
+
+
+
+<head>
+  <title>Android Core Media Permissions</title>
+  <meta
+    name="description"
+    content="Learn how to manage permissions in your Android application for a secure and controlled user experience with Dyte Docs."
+  />
+</head>

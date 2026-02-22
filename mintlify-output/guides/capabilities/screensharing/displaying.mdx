@@ -1,0 +1,369 @@
+---
+title: "Displaying Screenshare"
+---
+
+## Usage
+
+### Events <div class="header-tag tag-core">Core</div>
+
+Once any user starts sharing the screen, use the screenshare view from the UIKit to display the shared screen. The component allows you to nest other components inside it to create a custom layout based on your needs. Check out a the sample usage of UIKit on your prefered platform.
+
+
+
+<Tabs>
+
+
+
+
+<Tab title="Javascript">
+
+
+
+```jsx
+meeting.participants.joined.on('screenShareUpdate', (participant) => {
+  if (participant.screenShareEnabled) {
+    // participant.screenShareTrack
+  } else {
+    // handle stop screen share
+  }
+});
+```
+
+
+
+</Tab>
+
+
+
+
+<Tab title="React">
+
+
+
+```jsx
+const { meeting } = useDyteMeeting();
+
+// Array of participants having their screenshare on
+const ssParticipants = useDyteSelector((m) =>
+  m.participant.joined.toArray().filter((p) => p.screenShareEnabled),
+);
+
+// or using traditional event listeners
+meeting.participants.joined.on('screenShareUpdate', (participant) => {
+  if (participant.screenShareEnabled) {
+    // participant.screenShareTrack
+  } else {
+    // handle stop screen share
+  }
+});
+```
+
+
+
+</Tab>
+
+
+
+
+<Tab title="Flutter">
+
+
+
+```dart
+...
+
+@override
+void onScreenShareStarted(DyteJoinedMeetingParticipant participant) {
+  /// handle screen share started of `DyteJoinedMeetingParticipant` participant
+}
+
+@override
+void onScreenShareEnded(DyteJoinedMeetingParticipant participant) {
+  /// handle screen share ended of `DyteJoinedMeetingParticipant` participant
+}
+
+...
+```
+
+
+
+</Tab>
+
+
+
+
+<Tab title="React Native">
+
+
+
+```jsx
+const { meeting } = useDyteMeeting();
+
+// Array of participants having their screenshare on
+const ssParticipants = useDyteSelector((m) =>
+  m.participant.joined.toArray().filter((p) => p.screenShareEnabled),
+);
+
+// or using traditional event listeners
+meeting.participants.joined.on('screenShareUpdate', (participant) => {
+  if (participant.screenShareEnabled) {
+    // participant.screenShareTrack
+  } else {
+    // handle stop screen share
+  }
+});
+```
+
+
+
+</Tab>
+
+
+
+
+<Tab title="Android (Kotlin)">
+
+
+
+```kotlin
+
+private val participantEventsListener = object : DyteParticipantEventsListener {
+        override fun onScreenSharesUpdated() {
+            super.onScreenSharesUpdated()
+
+            ...
+        }
+    }
+
+```
+
+
+
+</Tab>
+
+
+
+
+<Tab title="iOS (Swift)">
+
+
+
+```swift
+DyteParticipantEventsListener {
+        func onScreenSharesUpdated() {
+            // your code here to handle screenshares from meeting
+        }
+        func onScreenShareEnded(participant: DyteMeetingParticipant) {
+            // your code here to handle screenshare ended
+        }
+
+        func onScreenShareStarted(participant: DyteMeetingParticipant) {
+            //  your code here to handle screenshare started
+        }
+}
+```
+
+
+
+</Tab>
+
+
+
+
+</Tabs>
+
+
+
+### Components <div class="header-tag tag-ui">UI Kit</div>
+
+This component does not render anything if the participant hasn't start sharing their screen.
+
+
+
+<Tabs>
+
+
+
+
+<Tab title="Web Components">
+
+
+
+```jsx
+<dyte-screenshare-view class="dyte-el" style="height: 480px">
+  <dyte-name-tag class="dyte-el">
+    <dyte-audio-visualizer class="dyte-el" slot="start"></dyte-audio-visualizer>
+  </dyte-name-tag>
+</dyte-screenshare-view>
+
+<script>
+  const elements = document.getElementsByClassName('dyte-el');
+  for (const el of elements) {
+    el.participant = ssParticipant;
+  }
+</script>
+```
+
+Check out the [reference](/ui-kit/components/dyte-screenshare-view) for more details about the attributes.
+
+To create your own component, you can use the `screenShareTracks` property of the [local user](/web-core/local-user/introduction) to get the list of screen share tracks and control how you want to display them.
+
+
+
+</Tab>
+
+
+
+
+<Tab title="React">
+
+
+
+```jsx
+import {
+  DyteScreenshareView,
+  DyteNameTag,
+  DyteAudioVisualizer,
+} from '@dytesdk/react-ui-kit';
+
+<DyteScreenshareView participant={ssParticipant} style={{ height: '480px' }}>
+  <DyteNameTag participant={ssParticipant}>
+    <DyteAudioVisualizer slot="start" participant={ssParticipant} />
+  </DyteNameTag>
+</DyteScreenshareView>;
+```
+
+Check out the [reference](/react-ui-kit/components/dyte-screenshare-view) for more details about the props.
+
+To create your own component, you can use the `screenShareTracks` property of the [local user](/react-web-core/local-user/introduction) to get the list of screen share tracks and control how you want to display them.
+
+
+
+</Tab>
+
+
+
+
+<Tab title="Angular">
+
+
+
+```jsx
+<dyte-screenshare-view class="dyte-el" style="height: 480px">
+  <dyte-name-tag class="dyte-el">
+    <dyte-audio-visualizer class="dyte-el" slot="start"></dyte-audio-visualizer>
+  </dyte-name-tag>
+</dyte-screenshare-view>
+
+<script>
+const elements = document.getElementsByClassName('dyte-el');
+  for (const el of elements) {
+    el.participant = ssParticipant;
+  }
+</script>
+```
+
+Check out the [reference](/angular-ui-kit/components/dyte-screenshare-view) for more details about the attributes.
+
+To create your own component, you can use the `screenShareTracks` property of the [local user](/web-core/local-user/introduction) to get the list of screen share tracks and control how you want to display them.
+
+
+
+</Tab>
+
+
+
+
+<Tab title="Flutter">
+
+
+
+
+
+<Info>
+
+:::
+
+
+
+</Tab>
+
+
+
+
+<Tab title="React Native">
+
+
+
+```jsx
+import {
+  DyteScreenshareView,
+  DyteNameTag,
+  DyteAudioVisualizer,
+} from '@dytesdk/react-native-ui-kit';
+
+<DyteScreenshareView participant={ssParticipant} style={{ height: '480px' }}>
+  <DyteNameTag participant={ssParticipant}>
+    <DyteAudioVisualizer slot="start" participant={ssParticipant} />
+  </DyteNameTag>
+</DyteScreenshareView>;
+```
+
+Check out the [reference](/react-native/components/dyte-screenshare-view) for more details about the props.
+
+To create your own component, you can use the `screenShareTracks` property of the [local user](/rn-core/local-user/introduction) to get the list of screen share tracks and control how you want to display them.
+
+
+
+</Tab>
+
+
+
+
+<Tab title="Android (Kotlin)">
+
+</Info>
+
+info
+This UI component does not currently exist in the Android UIKit.
+:::
+
+You can create your own component. To do so use the `screenShareTrack` property of the [local user](/android-core/local-user/introduction) to get the list of screen share tracks and control how you want to display them.
+
+
+
+</Tab>
+
+
+
+
+<Tab title="iOS (Swift)">
+
+
+
+
+
+<Info>
+
+This UI component does not currently exist in the iOS UIKit.
+
+</Info>
+
+
+
+You can create your own component. To do so use the `screenShareTrack` property of the [local user](/ios-core/local-user/introduction) to get the list of screen share tracks and control how you want to display them.
+
+
+
+</Tab>
+
+
+
+
+</Tabs>
+
+
+
+<head>
+  <title>Displaying Screenshare Guide</title>
+</head>

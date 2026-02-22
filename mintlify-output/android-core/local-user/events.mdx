@@ -1,0 +1,402 @@
+---
+title: "Events"
+---
+
+## Local User - Events
+
+You can subscribe to various events on the local user by implementing `DyteSelfEventsListener` and passing the object to `meeting.addSelfEventsListener(dyteSelfEventsListener)`.
+
+### Video update
+
+Triggered when the user starts/stops the video using `enableVideo()` or
+`disableVideo()`.
+
+
+
+<Tabs>
+
+
+  
+
+<Tab title="Kotlin">
+
+
+
+```kotlin
+meeting.addSelfEventsListener(object : DyteSelfEventsListener {
+    override fun onVideoUpdate(isEnabled: Boolean) {
+      if (isEnabled) {
+        // video is enabled, and other participants in room can see local user
+      } else {
+        // video is disabled, and other participants in room can not see local user.
+      }
+    }
+})
+```
+
+  
+
+</Tab>
+
+
+
+  
+
+<Tab title="Java">
+
+
+
+```java
+meeting.addSelfEventsListener(new DyteSelfEventsListener() {
+    @Override
+    public void onVideoUpdate(boolean isEnabled) {
+      if (isEnabled) {
+        // video is enabled, and other participants in room can see local user
+      } else {
+        // video is disabled, and other participants in room can not see local user.
+      }
+    }
+});
+```
+
+  
+
+</Tab>
+
+
+
+
+</Tabs>
+
+
+
+### Audio update
+
+Triggered when the user starts/stops the audio using `enableAudio()` or
+`disableAudio()`.
+
+
+
+<Tabs>
+
+
+  
+
+<Tab title="Kotlin">
+
+
+
+```kotlin
+meeting.addSelfEventsListener(object : DyteSelfEventsListener {
+    override fun onAudioUpdate(isEnabled: Boolean) {
+      if (isEnabled) {
+        // audio is enabled, and other participants in room can hear local user
+      } else {
+        // audio is disabled, and other participants in room can not hear local user.
+      }
+    }
+})
+```
+
+  
+
+</Tab>
+
+
+
+  
+
+<Tab title="Java">
+
+
+
+```java
+meeting.addSelfEventsListener(new DyteSelfEventsListener() {
+    override fun onAudioUpdate(boolean isEnabled) {
+      if (isEnabled) {
+        // audio is enabled, and other participants in room can hear local user
+      } else {
+        // audio is disabled, and other participants in room can not hear local user.
+      }
+    }
+});
+```
+
+  
+
+</Tab>
+
+
+
+
+</Tabs>
+
+
+
+### Waitlist status
+
+For meetings whose waiting room is enabled:
+
+To get status of localUser in waiting room we can use
+
+
+
+<Tabs>
+
+
+  
+
+<Tab title="Kotlin">
+
+
+
+```kotlin
+val waitListStatus = meeting.localUser.waitListStatus
+```
+
+  
+
+</Tab>
+
+
+
+  
+
+<Tab title="Java">
+
+
+
+```java
+WaitListStatus waitListStatus = meeting.localUser.getWaitListStatus();
+```
+
+  
+
+</Tab>
+
+
+
+
+</Tabs>
+
+
+
+You can listen to those changes in `onWaitListStatusUpdate()` callbacks
+
+
+
+<Tabs>
+
+
+  
+
+<Tab title="Kotlin">
+
+
+
+```kotlin
+meeting.addSelfEventsListener(object : DyteSelfEventsListener {
+    override fun onWaitListStatusUpdate(waitListStatus: WaitListStatus) {
+      // handle waitlist status here
+    }
+})
+```
+
+  
+
+</Tab>
+
+
+
+  
+
+<Tab title="Java">
+
+
+
+```java
+meeting.addSelfEventsListener(new DyteSelfEventsListener() {
+    @Override
+    public void onWaitListStatusUpdate(WaitListStatus waitListStatus) {
+      // handle waitlist status here
+    }
+});
+```
+
+  
+
+</Tab>
+
+
+
+
+</Tabs>
+
+
+
+### Screenshare callbacks for local user
+
+
+
+<Tabs>
+
+
+  
+
+<Tab title="Kotlin">
+
+
+
+```kotlin
+meeting.addSelfEventsListener(object : DyteSelfEventsListener {
+    override fun onScreenShareStartFailed(reason: String) {
+    }
+
+    override fun onScreenShareUpdate(isEnabled: Boolean) {
+    }
+})
+```
+
+  
+
+</Tab>
+
+
+
+  
+
+<Tab title="Java">
+
+
+
+```java
+meeting.addSelfEventsListener(new DyteSelfEventsListener() {
+    @Override
+    public void onScreenShareStartFailed(@NonNull String reason) {
+    }
+
+    @Override
+    public void onScreenShareUpdate(boolean isEnabled) {
+    }
+});
+```
+
+  
+
+</Tab>
+
+
+
+
+</Tabs>
+
+
+
+### Device permission callbacks once local user is joined in the meeting
+
+
+
+<Tabs>
+
+
+  
+
+<Tab title="Kotlin">
+
+
+
+```kotlin
+meeting.addSelfEventsListener(object : DyteSelfEventsListener {
+    override fun onMeetingRoomJoinedWithoutCameraPermission() {
+    }
+
+    override fun onMeetingRoomJoinedWithoutMicPermission() {
+    }
+})
+```
+
+  
+
+</Tab>
+
+
+
+  
+
+<Tab title="Java">
+
+
+
+```kotlin
+meeting.addSelfEventsListener(new DyteSelfEventsListener() {
+    @Override
+    public void onMeetingRoomJoinedWithoutCameraPermission() {
+    }
+
+    @Override
+    public void onMeetingRoomJoinedWithoutMicPermission() {
+    }
+});
+```
+
+  
+
+</Tab>
+
+
+
+
+</Tabs>
+
+
+
+### When local user is kicked out from the meeting by a remote user
+
+
+
+<Tabs>
+
+
+  
+
+<Tab title="Kotlin">
+
+
+
+```kotlin
+meeting.addSelfEventsListener(object : DyteSelfEventsListener {
+    override fun onRemovedFromMeeting() {
+    }
+});
+```
+
+  
+
+</Tab>
+
+
+
+  
+
+<Tab title="Java">
+
+
+
+```java
+meeting.addSelfEventsListener(new DyteSelfEventsListener() {
+    @Override
+    public void onRemovedFromMeeting() {
+    }
+})
+```
+
+  
+
+</Tab>
+
+
+
+
+</Tabs>
+
+

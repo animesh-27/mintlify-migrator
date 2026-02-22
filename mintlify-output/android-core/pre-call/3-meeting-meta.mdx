@@ -1,0 +1,51 @@
+---
+title: "Meeting Metadata"
+---
+
+### Change the name of the user
+
+You can allow the user to edit their name by using the `setDisplayName` method.
+
+
+
+<Tabs>
+
+
+  
+
+<Tab title="Kotlin">
+
+
+
+```kotlin
+meeting.localUser.setDisplayName("New Name")
+```
+
+  
+
+</Tab>
+
+
+
+  
+
+<Tab title="Java">
+
+
+
+```java
+meeting.localUser.setDisplayName("New Name");
+```
+
+  
+
+</Tab>
+
+
+
+
+</Tabs>
+
+
+
+**Note**: The name change will only be reflected to other participants if this method is called before joining the room.

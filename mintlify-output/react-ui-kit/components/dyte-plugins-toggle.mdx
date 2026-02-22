@@ -1,0 +1,30 @@
+---
+title: "Dyte Plugins Toggle"
+---
+
+A button which toggles visibility of plugins.
+
+When clicked it emits a `dyteStateUpdate` event with the data:
+
+```ts
+{
+  activeSidebar: boolean;
+  sidebar: 'plugins' | 'none';
+}
+```
+
+```jsx live
+<Center>
+  <DytePluginsToggle size="sm" meeting={meeting} />
+  <DytePluginsToggle size="lg" meeting={meeting} />
+  <DytePluginsToggle variant="horizontal" size="sm" meeting={meeting} />
+</Center>
+```
+
+## Props
+
+<PropsTable of="dyte-plugins-toggle" />
+
+<head>
+  <title>React UI Kit DytePluginsToggle</title>
+</head>

@@ -1,0 +1,32 @@
+---
+title: "Dyte Settings Audio"
+---
+
+A component which lets to manage your audio devices and audio preferences.
+
+Emits `dyteStateUpdate` event with data for muting notification sounds:
+
+```ts
+{
+  prefs: {
+    muteNotificationSounds: boolean;
+  }
+}
+```
+
+```html
+<dyte-settings-audio id="dyte-el"></dyte-settings-audio>
+
+<script>
+  const el = document.getElementById('dyte-el');
+  el.meeting = meeting;
+</script>
+```
+
+## Props
+
+<PropsTable of="dyte-settings-audio" />
+
+<head>
+  <title>UI Kit dyte-settings-audio</title>
+</head>

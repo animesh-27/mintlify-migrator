@@ -1,0 +1,25 @@
+---
+title: "Dyte Spotlight Grid"
+---
+
+A grid component that renders two lists of participants: `pinnedParticipants`
+and `participants`.
+
+- Participants from `pinnedParticipants[]` are rendered inside a larger grid.
+- Participants from `participants[]` array are rendered in a smaller grid.
+
+```jsx
+<DyteSpotlightGrid
+  participants={[meeting.self]}
+  pinnedParticipants={[meeting.self]}
+  style={{ height: '360px', width: '100%' }}
+/>
+```
+
+## Props
+
+<PropsTable of="dyte-spotlight-grid" />
+
+<head>
+  <title>React Native UI Kit DyteSpotlightGrid</title>
+</head>
